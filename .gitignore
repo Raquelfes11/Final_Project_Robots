@@ -1,0 +1,10 @@
+# ROS
+build/*
+install/*
+log/*
+.vscode/*
+.devcontainer/*
+src.zip
+
+# Python
+__pycache__/
