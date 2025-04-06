@@ -161,7 +161,6 @@ private:
      */
     void _execute_motion_step(float z_v, float z_w)
     {
-        // TODO: implement motion update
         auto start = std::chrono::high_resolution_clock::now();
 
         _particle_filter->move(z_v, z_w);
@@ -184,7 +183,6 @@ private:
      */
     std::tuple<double, double, double> _execute_measurement_step(const std::vector<float> &z_us)
     {
-        // TODO: implement measurement update
         std::tuple<double, double, double> pose{std::numeric_limits<double>::infinity(),
                                                 std::numeric_limits<double>::infinity(),
                                                 std::numeric_limits<double>::infinity()};
@@ -221,7 +219,6 @@ private:
      */
     void _publish_pose_estimate(double x_h, double y_h, double theta_h)
     {
-        // TODO: implement publishing logic
         amr_msgs::msg::PoseStamped pose_msg;
         pose_msg.header.stamp = this->get_clock()->now();
         pose_msg.localized = _localized;

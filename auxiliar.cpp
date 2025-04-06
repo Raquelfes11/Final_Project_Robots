@@ -1,98 +1,64 @@
-#pragma once
-#include "amr_localization/map.hpp"
-#include <tuple>
-#include <vector>
-#include <memory>
-#include <limits>
-#include <cmath>
-#include <random>
+std::tuple<bool, std::tuple<double, double, double>> compute_pose(const std::vector<double>& measurements)
+{
+    std::vector<double> weights;
+    weights.reserve(_particles.size());
 
-struct Particle {
-    double x;
-    double y;
-    double theta;
-    double weight;
-
-    Particle(double x_, double y_, double theta_, double weight_ = 1.0)
-        : x(x_), y(y_), theta(theta_), weight(weight_) {}
-};
-
-class ParticleFilter {
-public:
-    ParticleFilter(
-        double dt,
-        const std::string& map_path,
-        int particle_count,
-        double sigma_v = 0.05,
-        double sigma_w = 0.1,
-        double sigma_z = 0.2,
-        double sensor_range_max = 8.0,
-        double sensor_range_min = 0.16,
-        bool global_localization = true,
-        std::tuple<double, double, double> initial_pose = {
-            std::numeric_limits<double>::quiet_NaN(),
-            std::numeric_limits<double>::quiet_NaN(),
-            std::numeric_limits<double>::quiet_NaN()},
-        std::tuple<double, double, double> initial_pose_sigma = {
-            std::numeric_limits<double>::quiet_NaN(),
-            std::numeric_limits<double>::quiet_NaN(),
-            std::numeric_limits<double>::quiet_NaN()}
-    )
-        : _dt(dt),
-          _initial_particle_count(particle_count),
-          _particle_count(particle_count),
-          _sensor_range_max(sensor_range_max),
-          _sensor_range_min(sensor_range_min),
-          _sigma_v(sigma_v),
-          _sigma_w(sigma_w),
-          _sigma_z(sigma_z),
-          _iteration(0)
+    // 1. Calcular pesos usando medidas reales contra medidas simuladas
+    for (const auto& particle : _particles)
     {
-        _map = std::make_shared<Map>(map_path, sensor_range_max, 0.08, true, false);
-        _particles = _init_particles(particle_count, global_localization, initial_pose, initial_pose_sigma);
+        std::list<double> downsampled_measurements;
+        for (size_t i = 0; i < measurements.size(); i += 30)
+        {
+            downsampled_measurements.push_back(measurements[i]);
+        }
+
+        double w = _measurement_probability(
+            std::vector<double>(downsampled_measurements.begin(), downsampled_measurements.end()),
+            particle
+        );
+
+        weights.push_back(w);
     }
 
-    std::tuple<bool, std::tuple<double, double, double>> compute_pose();
+    // 2. Normalizar los pesos
+    double sum_weights = std::accumulate(weights.begin(), weights.end(), 0.0);
+    for (double& w : weights)
+    {
+        w /= sum_weights;
+    }
 
-    void move(double v, double w);
+    // 3. Resample usando muestreo estocástico universal
+    std::vector<std::tuple<double, double, double>> new_particles;
+    new_particles.reserve(_particles.size());
 
-    void resample(const std::vector<double>& measurements);
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_real_distribution<> dist(0.0, 1.0 / _particles.size());
 
-private:
-    std::vector<Particle> _init_particles(
-        int particle_count,
-        bool global_localization,
-        const std::tuple<double, double, double>& initial_pose,
-        const std::tuple<double, double, double>& initial_pose_sigma
-    );
+    double r = dist(gen);
+    double c = weights[0];
+    int i = 0;
 
-    std::vector<double> _sense(const Particle& particle);
+    for (size_t m = 0; m < _particles.size(); ++m)
+    {
+        double U = r + m * (1.0 / _particles.size());
+        while (U > c)
+        {
+            i++;
+            if (i >= static_cast<int>(weights.size())) {
+                i = weights.size() - 1;
+                break;
+            }
+            c += weights[i];
+        }
+        new_particles.push_back(_particles[i]);
+    }
 
-    static double _gaussian(double mu, double sigma, double x);
+    _particles = new_particles;
 
-    std::vector<std::vector<std::pair<double, double>>> _lidar_rays(
-        const std::tuple<double, double, double>& pose,
-        const std::vector<int>& indices,
-        double degree_increment = 1.5
-    );
-
-    double _measurement_probability(
-        const std::vector<double>& measurements,
-        const Particle& particle
-    );
-
-    // Attributes
-    double _dt;
-    int _initial_particle_count;
-    int _particle_count;
-    double _sensor_range_max;
-    double _sensor_range_min;
-    double _sigma_v;
-    double _sigma_w;
-    double _sigma_z;
-    int _iteration;
-
-    std::shared_ptr<Map> _map;
-    std::vector<Particle> _particles;
-    std::string _timestamp;
-};
+    // 4. NO calculamos el promedio del pose aquí (esa lógica está en `resample`)
+    // Devuelve dummy pose (no-localizado) por ahora
+    return std::make_tuple(false, std::make_tuple(std::numeric_limits<double>::quiet_NaN(),
+                                                  std::numeric_limits<double>::quiet_NaN(),
+                                                  std::numeric_limits<double>::quiet_NaN()));
+}
