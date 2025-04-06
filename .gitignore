@@ -4,6 +4,7 @@ install/*
 log/*
 .vscode/*
 .devcontainer/*
+src/amr_cpp/*
 src.zip
 
 # Python
