@@ -1,0 +1,15 @@
+/workspaces/sim_ws/src/install/amr_localization_cpp/share/ament_index/resource_index/package_run_dependencies/amr_localization_cpp
+/workspaces/sim_ws/src/install/amr_localization_cpp/share/ament_index/resource_index/parent_prefix_path/amr_localization_cpp
+/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/environment/ament_prefix_path.sh
+/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/environment/ament_prefix_path.dsv
+/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/environment/path.sh
+/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/environment/path.dsv
+/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/local_setup.bash
+/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/local_setup.sh
+/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/local_setup.zsh
+/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/local_setup.dsv
+/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/package.dsv
+/workspaces/sim_ws/src/install/amr_localization_cpp/share/ament_index/resource_index/packages/amr_localization_cpp
+/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/cmake/amr_localization_cppConfig.cmake
+/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/cmake/amr_localization_cppConfig-version.cmake
+/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/package.xml

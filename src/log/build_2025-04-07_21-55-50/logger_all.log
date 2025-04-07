@@ -1,0 +1,111 @@
+[0.213s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.214s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7fd9fd128f10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fd9fd128a00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fd9fd128a00>>, mixin_verb=('build',))
+[0.438s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.439s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.439s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.439s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.440s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.440s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.441s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspaces/sim_ws/src'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.472s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.478s] Level 1:colcon.colcon_core.package_identification:_identify(amr_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(amr_bringup) by extension 'ignore'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(amr_bringup) by extension 'ignore_ament_install'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(amr_bringup) by extensions ['colcon_pkg']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(amr_bringup) by extension 'colcon_pkg'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(amr_bringup) by extensions ['colcon_meta']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(amr_bringup) by extension 'colcon_meta'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(amr_bringup) by extensions ['ros']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(amr_bringup) by extension 'ros'
+[0.493s] DEBUG:colcon.colcon_core.package_identification:Package 'amr_bringup' with type 'ros.ament_python' and name 'amr_bringup'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(amr_control) by extensions ['ignore', 'ignore_ament_install']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(amr_control) by extension 'ignore'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(amr_control) by extension 'ignore_ament_install'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(amr_control) by extensions ['colcon_pkg']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(amr_control) by extension 'colcon_pkg'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(amr_control) by extensions ['colcon_meta']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(amr_control) by extension 'colcon_meta'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(amr_control) by extensions ['ros']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(amr_control) by extension 'ros'
+[0.506s] DEBUG:colcon.colcon_core.package_identification:Package 'amr_control' with type 'ros.ament_python' and name 'amr_control'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization) by extensions ['ignore', 'ignore_ament_install']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization) by extension 'ignore'
+[0.511s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization) by extension 'ignore_ament_install'
+[0.512s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization) by extensions ['colcon_pkg']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization) by extension 'colcon_pkg'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization) by extensions ['colcon_meta']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization) by extension 'colcon_meta'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization) by extensions ['ros']
+[0.515s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization) by extension 'ros'
+[0.523s] DEBUG:colcon.colcon_core.package_identification:Package 'amr_localization' with type 'ros.ament_python' and name 'amr_localization'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization_cpp) by extension 'ignore'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization_cpp) by extension 'ignore_ament_install'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization_cpp) by extensions ['colcon_pkg']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization_cpp) by extension 'colcon_pkg'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization_cpp) by extensions ['colcon_meta']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization_cpp) by extension 'colcon_meta'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization_cpp) by extensions ['ros']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization_cpp) by extension 'ros'
+[0.538s] DEBUG:colcon.colcon_core.package_identification:Package 'amr_localization_cpp' with type 'ros.ament_cmake' and name 'amr_localization'
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(amr_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(amr_msgs) by extension 'ignore'
+[0.541s] Level 1:colcon.colcon_core.package_identification:_identify(amr_msgs) by extension 'ignore_ament_install'
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(amr_msgs) by extensions ['colcon_pkg']
+[0.542s] Level 1:colcon.colcon_core.package_identification:_identify(amr_msgs) by extension 'colcon_pkg'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(amr_msgs) by extensions ['colcon_meta']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(amr_msgs) by extension 'colcon_meta'
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(amr_msgs) by extensions ['ros']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(amr_msgs) by extension 'ros'
+[0.551s] DEBUG:colcon.colcon_core.package_identification:Package 'amr_msgs' with type 'ros.ament_cmake' and name 'amr_msgs'
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(amr_planning) by extensions ['ignore', 'ignore_ament_install']
+[0.554s] Level 1:colcon.colcon_core.package_identification:_identify(amr_planning) by extension 'ignore'
+[0.555s] Level 1:colcon.colcon_core.package_identification:_identify(amr_planning) by extension 'ignore_ament_install'
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(amr_planning) by extensions ['colcon_pkg']
+[0.557s] Level 1:colcon.colcon_core.package_identification:_identify(amr_planning) by extension 'colcon_pkg'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(amr_planning) by extensions ['colcon_meta']
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(amr_planning) by extension 'colcon_meta'
+[0.558s] Level 1:colcon.colcon_core.package_identification:_identify(amr_planning) by extensions ['ros']
+[0.559s] Level 1:colcon.colcon_core.package_identification:_identify(amr_planning) by extension 'ros'
+[0.566s] DEBUG:colcon.colcon_core.package_identification:Package 'amr_planning' with type 'ros.ament_python' and name 'amr_planning'
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(amr_simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.569s] Level 1:colcon.colcon_core.package_identification:_identify(amr_simulation) by extension 'ignore'
+[0.570s] Level 1:colcon.colcon_core.package_identification:_identify(amr_simulation) by extension 'ignore_ament_install'
+[0.571s] Level 1:colcon.colcon_core.package_identification:_identify(amr_simulation) by extensions ['colcon_pkg']
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(amr_simulation) by extension 'colcon_pkg'
+[0.572s] Level 1:colcon.colcon_core.package_identification:_identify(amr_simulation) by extensions ['colcon_meta']
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(amr_simulation) by extension 'colcon_meta'
+[0.573s] Level 1:colcon.colcon_core.package_identification:_identify(amr_simulation) by extensions ['ros']
+[0.574s] Level 1:colcon.colcon_core.package_identification:_identify(amr_simulation) by extension 'ros'
+[0.583s] DEBUG:colcon.colcon_core.package_identification:Package 'amr_simulation' with type 'ros.ament_python' and name 'amr_simulation'
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.587s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.588s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.591s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.592s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.596s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.598s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.598s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.599s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.599s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.599s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.665s] ERROR:colcon:colcon build: Duplicate package names not supported:
+- amr_localization:
+  - amr_localization
+  - amr_localization_cpp

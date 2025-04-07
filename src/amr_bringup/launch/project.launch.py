@@ -10,7 +10,7 @@ def generate_launch_description():
     goal = (-0.6, 1.0)
 
     particle_filter_node = LifecycleNode(
-        package="amr_localization",
+        package="amr_localization_cpp",
         executable="particle_filter",
         name="particle_filter",
         namespace="",

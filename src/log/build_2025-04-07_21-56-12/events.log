@@ -1,0 +1,1155 @@
+[0.000000] (-) TimerEvent: {}
+[0.001302] (amr_bringup) JobQueued: {'identifier': 'amr_bringup', 'dependencies': OrderedDict()}
+[0.001859] (amr_msgs) JobQueued: {'identifier': 'amr_msgs', 'dependencies': OrderedDict()}
+[0.002063] (amr_planning) JobQueued: {'identifier': 'amr_planning', 'dependencies': OrderedDict()}
+[0.002246] (amr_control) JobQueued: {'identifier': 'amr_control', 'dependencies': OrderedDict([('amr_msgs', '/workspaces/sim_ws/src/install/amr_msgs')])}
+[0.002455] (amr_localization) JobQueued: {'identifier': 'amr_localization', 'dependencies': OrderedDict([('amr_msgs', '/workspaces/sim_ws/src/install/amr_msgs')])}
+[0.002761] (amr_localization_cpp) JobQueued: {'identifier': 'amr_localization_cpp', 'dependencies': OrderedDict([('amr_msgs', '/workspaces/sim_ws/src/install/amr_msgs')])}
+[0.002927] (amr_simulation) JobQueued: {'identifier': 'amr_simulation', 'dependencies': OrderedDict([('amr_msgs', '/workspaces/sim_ws/src/install/amr_msgs')])}
+[0.003144] (amr_msgs) JobStarted: {'identifier': 'amr_msgs'}
+[0.077544] (amr_bringup) JobStarted: {'identifier': 'amr_bringup'}
+[0.097378] (-) TimerEvent: {}
+[0.157653] (amr_planning) JobStarted: {'identifier': 'amr_planning'}
+[0.197501] (-) TimerEvent: {}
+[0.234994] (amr_msgs) JobProgress: {'identifier': 'amr_msgs', 'progress': 'cmake'}
+[0.270403] (amr_msgs) Command: {'cmd': ['/usr/bin/cmake', '/workspaces/sim_ws/src/amr_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspaces/sim_ws/src/install/amr_msgs'], 'cwd': '/workspaces/sim_ws/src/build/amr_msgs', 'env': OrderedDict([('HOSTNAME', 'humble'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/sim_ws/install/amr_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/helpers/browser.sh'), ('HOME', '/home/ros'), ('OLDPWD', '/workspaces/sim_ws'), ('TERM_PROGRAM_VERSION', '1.99.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-041a9283-536e-4de1-bc30-1f33b4901c5f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-b7fb7ebb-8de1-407b-81e1-3ba823c3e73f.sock'), ('COLCON_PREFIX_PATH', '/workspaces/sim_ws/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d3e0f4ad-d6e0-41e5-9651-6f18d8312593.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/ros/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-4a8da02f30.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/sim_ws/src/build/amr_msgs'), ('LC_ALL', 'C.UTF-8'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/workspaces/sim_ws/build/amr_simulation:/workspaces/sim_ws/install/amr_simulation/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_planning:/workspaces/sim_ws/install/amr_planning/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_control:/workspaces/sim_ws/install/amr_control/lib/python3.10/site-packages:/workspaces/sim_ws/install/amr_msgs/local/lib/python3.10/dist-packages:/workspaces/sim_ws/build/amr_bringup:/workspaces/sim_ws/install/amr_bringup/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble')]), 'shell': False}
+[0.297655] (-) TimerEvent: {}
+[0.398400] (-) TimerEvent: {}
+[0.499104] (-) TimerEvent: {}
+[0.599831] (-) TimerEvent: {}
+[0.700690] (-) TimerEvent: {}
+[0.795296] (amr_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.800835] (-) TimerEvent: {}
+[0.901401] (-) TimerEvent: {}
+[1.002131] (-) TimerEvent: {}
+[1.103025] (-) TimerEvent: {}
+[1.204077] (-) TimerEvent: {}
+[1.231461] (amr_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.304342] (-) TimerEvent: {}
+[1.354788] (amr_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.404587] (-) TimerEvent: {}
+[1.505833] (-) TimerEvent: {}
+[1.606974] (-) TimerEvent: {}
+[1.708030] (-) TimerEvent: {}
+[1.808937] (-) TimerEvent: {}
+[1.909977] (-) TimerEvent: {}
+[2.010860] (-) TimerEvent: {}
+[2.111618] (-) TimerEvent: {}
+[2.212659] (-) TimerEvent: {}
+[2.313644] (-) TimerEvent: {}
+[2.404780] (amr_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.413798] (-) TimerEvent: {}
+[2.458969] (amr_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.460731] (amr_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.462571] (amr_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.513972] (-) TimerEvent: {}
+[2.540767] (amr_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.614116] (-) TimerEvent: {}
+[2.714746] (-) TimerEvent: {}
+[2.815475] (-) TimerEvent: {}
+[2.890609] (amr_planning) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/workspaces/sim_ws/src/build/amr_planning/build', '--no-deps', 'symlink_data'], 'cwd': '/workspaces/sim_ws/src/build/amr_planning', 'env': {'HOSTNAME': 'humble', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/workspaces/sim_ws/install/amr_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/helpers/browser.sh', 'HOME': '/home/ros', 'OLDPWD': '/workspaces/sim_ws', 'TERM_PROGRAM_VERSION': '1.99.0', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-041a9283-536e-4de1-bc30-1f33b4901c5f.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'WAYLAND_DISPLAY': 'vscode-wayland-b7fb7ebb-8de1-407b-81e1-3ba823c3e73f.sock', 'COLCON_PREFIX_PATH': '/workspaces/sim_ws/install', 'ROS_DISTRO': 'humble', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-d3e0f4ad-d6e0-41e5-9651-6f18d8312593.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/tmp/user/1000', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/.X11-unix/X0","/home/ros/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/user/1000/vscode-git-4a8da02f30.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X0', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/workspaces/sim_ws/src/build/amr_planning', 'LC_ALL': 'C.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/workspaces/sim_ws/src/build/amr_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/sim_ws/src/install/amr_planning/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_simulation:/workspaces/sim_ws/install/amr_simulation/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_planning:/workspaces/sim_ws/install/amr_planning/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_control:/workspaces/sim_ws/install/amr_control/lib/python3.10/site-packages:/workspaces/sim_ws/install/amr_msgs/local/lib/python3.10/dist-packages:/workspaces/sim_ws/build/amr_bringup:/workspaces/sim_ws/install/amr_bringup/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_msgs'}, 'shell': False}
+[2.915724] (-) TimerEvent: {}
+[2.999112] (amr_bringup) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/workspaces/sim_ws/src/build/amr_bringup/build', '--no-deps', 'symlink_data'], 'cwd': '/workspaces/sim_ws/src/build/amr_bringup', 'env': {'HOSTNAME': 'humble', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/workspaces/sim_ws/install/amr_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/helpers/browser.sh', 'HOME': '/home/ros', 'OLDPWD': '/workspaces/sim_ws', 'TERM_PROGRAM_VERSION': '1.99.0', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-041a9283-536e-4de1-bc30-1f33b4901c5f.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'WAYLAND_DISPLAY': 'vscode-wayland-b7fb7ebb-8de1-407b-81e1-3ba823c3e73f.sock', 'COLCON_PREFIX_PATH': '/workspaces/sim_ws/install', 'ROS_DISTRO': 'humble', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-d3e0f4ad-d6e0-41e5-9651-6f18d8312593.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/tmp/user/1000', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/.X11-unix/X0","/home/ros/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/user/1000/vscode-git-4a8da02f30.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X0', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/workspaces/sim_ws/src/build/amr_bringup', 'LC_ALL': 'C.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/workspaces/sim_ws/src/build/amr_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/sim_ws/src/install/amr_bringup/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_simulation:/workspaces/sim_ws/install/amr_simulation/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_planning:/workspaces/sim_ws/install/amr_planning/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_control:/workspaces/sim_ws/install/amr_control/lib/python3.10/site-packages:/workspaces/sim_ws/install/amr_msgs/local/lib/python3.10/dist-packages:/workspaces/sim_ws/build/amr_bringup:/workspaces/sim_ws/install/amr_bringup/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_msgs'}, 'shell': False}
+[3.021369] (-) TimerEvent: {}
+[3.122133] (-) TimerEvent: {}
+[3.223249] (-) TimerEvent: {}
+[3.324172] (-) TimerEvent: {}
+[3.396000] (amr_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.424348] (-) TimerEvent: {}
+[3.431289] (amr_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.433859] (amr_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.436083] (amr_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.524554] (-) TimerEvent: {}
+[3.534629] (amr_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[3.624707] (-) TimerEvent: {}
+[3.725370] (-) TimerEvent: {}
+[3.826226] (-) TimerEvent: {}
+[3.906857] (amr_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.926330] (-) TimerEvent: {}
+[4.027043] (-) TimerEvent: {}
+[4.107274] (amr_planning) StdoutLine: {'line': b'running develop\n'}
+[4.127231] (-) TimerEvent: {}
+[4.154587] (amr_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[4.168616] (amr_bringup) StdoutLine: {'line': b'running develop\n'}
+[4.227390] (-) TimerEvent: {}
+[4.328199] (-) TimerEvent: {}
+[4.386550] (amr_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[4.406886] (amr_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.416585] (amr_planning) StdoutLine: {'line': b'running egg_info\n'}
+[4.418037] (amr_planning) StdoutLine: {'line': b'creating amr_planning.egg-info\n'}
+[4.419814] (amr_planning) StdoutLine: {'line': b'writing amr_planning.egg-info/PKG-INFO\n'}
+[4.428343] (-) TimerEvent: {}
+[4.429132] (amr_planning) StdoutLine: {'line': b'writing dependency_links to amr_planning.egg-info/dependency_links.txt\n'}
+[4.431726] (amr_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.434386] (amr_planning) StdoutLine: {'line': b'writing entry points to amr_planning.egg-info/entry_points.txt\n'}
+[4.438969] (amr_planning) StdoutLine: {'line': b'writing requirements to amr_planning.egg-info/requires.txt\n'}
+[4.443375] (amr_planning) StdoutLine: {'line': b'writing top-level names to amr_planning.egg-info/top_level.txt\n'}
+[4.448755] (amr_planning) StdoutLine: {'line': b"writing manifest file 'amr_planning.egg-info/SOURCES.txt'\n"}
+[4.466402] (amr_bringup) StdoutLine: {'line': b'running egg_info\n'}
+[4.467775] (amr_bringup) StdoutLine: {'line': b'creating amr_bringup.egg-info\n'}
+[4.469783] (amr_bringup) StdoutLine: {'line': b'writing amr_bringup.egg-info/PKG-INFO\n'}
+[4.478776] (amr_bringup) StdoutLine: {'line': b'writing dependency_links to amr_bringup.egg-info/dependency_links.txt\n'}
+[4.485232] (amr_bringup) StdoutLine: {'line': b'writing entry points to amr_bringup.egg-info/entry_points.txt\n'}
+[4.490264] (amr_bringup) StdoutLine: {'line': b'writing requirements to amr_bringup.egg-info/requires.txt\n'}
+[4.494295] (amr_bringup) StdoutLine: {'line': b'writing top-level names to amr_bringup.egg-info/top_level.txt\n'}
+[4.500502] (amr_bringup) StdoutLine: {'line': b"writing manifest file 'amr_bringup.egg-info/SOURCES.txt'\n"}
+[4.517104] (amr_planning) StdoutLine: {'line': b"reading manifest file 'amr_planning.egg-info/SOURCES.txt'\n"}
+[4.528570] (-) TimerEvent: {}
+[4.590003] (amr_planning) StdoutLine: {'line': b"writing manifest file 'amr_planning.egg-info/SOURCES.txt'\n"}
+[4.591804] (amr_bringup) StdoutLine: {'line': b"reading manifest file 'amr_bringup.egg-info/SOURCES.txt'\n"}
+[4.596661] (amr_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.606759] (amr_planning) StdoutLine: {'line': b'running build_ext\n'}
+[4.608820] (amr_planning) StdoutLine: {'line': b'Creating /workspaces/sim_ws/src/install/amr_planning/lib/python3.10/site-packages/amr-planning.egg-link (link to .)\n'}
+[4.628852] (-) TimerEvent: {}
+[4.634104] (amr_planning) StdoutLine: {'line': b'Installing probabilistic_roadmap script to /workspaces/sim_ws/src/install/amr_planning/lib/amr_planning\n'}
+[4.659405] (amr_planning) StdoutLine: {'line': b'\n'}
+[4.661098] (amr_planning) StdoutLine: {'line': b'Installed /workspaces/sim_ws/src/build/amr_planning\n'}
+[4.664070] (amr_planning) StdoutLine: {'line': b'running symlink_data\n'}
+[4.670707] (amr_bringup) StdoutLine: {'line': b"writing manifest file 'amr_bringup.egg-info/SOURCES.txt'\n"}
+[4.674863] (amr_planning) StdoutLine: {'line': b'creating /workspaces/sim_ws/src/install/amr_planning/share/ament_index\n'}
+[4.678510] (amr_planning) StdoutLine: {'line': b'creating /workspaces/sim_ws/src/install/amr_planning/share/ament_index/resource_index\n'}
+[4.682852] (amr_planning) StdoutLine: {'line': b'creating /workspaces/sim_ws/src/install/amr_planning/share/ament_index/resource_index/packages\n'}
+[4.687012] (amr_bringup) StdoutLine: {'line': b'running build_ext\n'}
+[4.688361] (amr_bringup) StdoutLine: {'line': b'Creating /workspaces/sim_ws/src/install/amr_bringup/lib/python3.10/site-packages/amr-bringup.egg-link (link to .)\n'}
+[4.703455] (amr_planning) StdoutLine: {'line': b'symbolically linking /workspaces/sim_ws/src/build/amr_planning/resource/amr_planning -> /workspaces/sim_ws/src/install/amr_planning/share/ament_index/resource_index/packages\n'}
+[4.708354] (amr_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[4.715054] (amr_bringup) StdoutLine: {'line': b'Installing lifecycle_manager script to /workspaces/sim_ws/src/install/amr_bringup/lib/amr_bringup\n'}
+[4.726236] (amr_planning) StdoutLine: {'line': b'symbolically linking /workspaces/sim_ws/src/build/amr_planning/package.xml -> /workspaces/sim_ws/src/install/amr_planning/share/amr_planning\n'}
+[4.728986] (-) TimerEvent: {}
+[4.737824] (amr_bringup) StdoutLine: {'line': b'\n'}
+[4.739651] (amr_bringup) StdoutLine: {'line': b'Installed /workspaces/sim_ws/src/build/amr_bringup\n'}
+[4.744274] (amr_bringup) StdoutLine: {'line': b'running symlink_data\n'}
+[4.755190] (amr_bringup) StdoutLine: {'line': b'creating /workspaces/sim_ws/src/install/amr_bringup/share/ament_index\n'}
+[4.758422] (amr_bringup) StdoutLine: {'line': b'creating /workspaces/sim_ws/src/install/amr_bringup/share/ament_index/resource_index\n'}
+[4.763001] (amr_bringup) StdoutLine: {'line': b'creating /workspaces/sim_ws/src/install/amr_bringup/share/ament_index/resource_index/packages\n'}
+[4.780759] (amr_bringup) StdoutLine: {'line': b'symbolically linking /workspaces/sim_ws/src/build/amr_bringup/resource/amr_bringup -> /workspaces/sim_ws/src/install/amr_bringup/share/ament_index/resource_index/packages\n'}
+[4.790653] (amr_planning) CommandEnded: {'returncode': 0}
+[4.802842] (amr_bringup) StdoutLine: {'line': b'symbolically linking /workspaces/sim_ws/src/build/amr_bringup/package.xml -> /workspaces/sim_ws/src/install/amr_bringup/share/amr_bringup\n'}
+[4.814827] (amr_bringup) StdoutLine: {'line': b'creating /workspaces/sim_ws/src/install/amr_bringup/share/amr_bringup/launch\n'}
+[4.829163] (-) TimerEvent: {}
+[4.833466] (amr_bringup) StdoutLine: {'line': b'symbolically linking /workspaces/sim_ws/src/build/amr_bringup/launch/lab02.launch.py -> /workspaces/sim_ws/src/install/amr_bringup/share/amr_bringup/launch\n'}
+[4.863290] (amr_bringup) StdoutLine: {'line': b'symbolically linking /workspaces/sim_ws/src/build/amr_bringup/launch/lab03.launch.py -> /workspaces/sim_ws/src/install/amr_bringup/share/amr_bringup/launch\n'}
+[4.885582] (amr_bringup) StdoutLine: {'line': b'symbolically linking /workspaces/sim_ws/src/build/amr_bringup/launch/lab04.launch.py -> /workspaces/sim_ws/src/install/amr_bringup/share/amr_bringup/launch\n'}
+[4.909998] (amr_bringup) StdoutLine: {'line': b'symbolically linking /workspaces/sim_ws/src/build/amr_bringup/launch/project.launch.py -> /workspaces/sim_ws/src/install/amr_bringup/share/amr_bringup/launch\n'}
+[4.929353] (-) TimerEvent: {}
+[5.030252] (-) TimerEvent: {}
+[5.130970] (-) TimerEvent: {}
+[5.187117] (amr_planning) JobEnded: {'identifier': 'amr_planning', 'rc': 0}
+[5.195749] (amr_bringup) CommandEnded: {'returncode': 0}
+[5.231195] (-) TimerEvent: {}
+[5.332426] (-) TimerEvent: {}
+[5.433045] (-) TimerEvent: {}
+[5.533676] (-) TimerEvent: {}
+[5.578724] (amr_bringup) JobEnded: {'identifier': 'amr_bringup', 'rc': 0}
+[5.633849] (-) TimerEvent: {}
+[5.734475] (-) TimerEvent: {}
+[5.835146] (-) TimerEvent: {}
+[5.935747] (-) TimerEvent: {}
+[6.036489] (-) TimerEvent: {}
+[6.059342] (amr_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[6.136656] (-) TimerEvent: {}
+[6.237328] (-) TimerEvent: {}
+[6.338215] (-) TimerEvent: {}
+[6.438823] (-) TimerEvent: {}
+[6.539471] (-) TimerEvent: {}
+[6.640450] (-) TimerEvent: {}
+[6.741313] (-) TimerEvent: {}
+[6.842237] (-) TimerEvent: {}
+[6.943697] (-) TimerEvent: {}
+[7.044515] (-) TimerEvent: {}
+[7.145410] (-) TimerEvent: {}
+[7.246155] (-) TimerEvent: {}
+[7.346851] (-) TimerEvent: {}
+[7.447709] (-) TimerEvent: {}
+[7.548578] (-) TimerEvent: {}
+[7.649380] (-) TimerEvent: {}
+[7.750189] (-) TimerEvent: {}
+[7.850965] (-) TimerEvent: {}
+[7.951728] (-) TimerEvent: {}
+[8.040192] (amr_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.051899] (-) TimerEvent: {}
+[8.152771] (-) TimerEvent: {}
+[8.253334] (-) TimerEvent: {}
+[8.353934] (-) TimerEvent: {}
+[8.454549] (-) TimerEvent: {}
+[8.555305] (-) TimerEvent: {}
+[8.656018] (-) TimerEvent: {}
+[8.756841] (-) TimerEvent: {}
+[8.857552] (-) TimerEvent: {}
+[8.958216] (-) TimerEvent: {}
+[9.058813] (-) TimerEvent: {}
+[9.159578] (-) TimerEvent: {}
+[9.260291] (-) TimerEvent: {}
+[9.361006] (-) TimerEvent: {}
+[9.461887] (-) TimerEvent: {}
+[9.562468] (-) TimerEvent: {}
+[9.663121] (-) TimerEvent: {}
+[9.763963] (-) TimerEvent: {}
+[9.864847] (-) TimerEvent: {}
+[9.965584] (-) TimerEvent: {}
+[10.066169] (-) TimerEvent: {}
+[10.142006] (amr_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[10.166350] (-) TimerEvent: {}
+[10.224944] (amr_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[10.234844] (amr_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[10.266468] (-) TimerEvent: {}
+[10.315308] (amr_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[10.316610] (amr_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[10.317733] (amr_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[10.318537] (amr_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[10.351198] (amr_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[10.366661] (-) TimerEvent: {}
+[10.467334] (-) TimerEvent: {}
+[10.568140] (-) TimerEvent: {}
+[10.668865] (-) TimerEvent: {}
+[10.769563] (-) TimerEvent: {}
+[10.870347] (-) TimerEvent: {}
+[10.969040] (amr_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[10.970411] (-) TimerEvent: {}
+[11.070971] (-) TimerEvent: {}
+[11.171927] (-) TimerEvent: {}
+[11.272576] (-) TimerEvent: {}
+[11.373237] (-) TimerEvent: {}
+[11.473864] (-) TimerEvent: {}
+[11.574492] (-) TimerEvent: {}
+[11.675247] (-) TimerEvent: {}
+[11.775952] (-) TimerEvent: {}
+[11.866613] (amr_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[11.876110] (-) TimerEvent: {}
+[11.976696] (-) TimerEvent: {}
+[12.077316] (-) TimerEvent: {}
+[12.152815] (amr_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[12.177466] (-) TimerEvent: {}
+[12.278108] (-) TimerEvent: {}
+[12.378707] (-) TimerEvent: {}
+[12.479469] (-) TimerEvent: {}
+[12.580276] (-) TimerEvent: {}
+[12.583121] (amr_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[12.680474] (-) TimerEvent: {}
+[12.781108] (-) TimerEvent: {}
+[12.881739] (-) TimerEvent: {}
+[12.982494] (-) TimerEvent: {}
+[13.087367] (-) TimerEvent: {}
+[13.188083] (-) TimerEvent: {}
+[13.288736] (-) TimerEvent: {}
+[13.389559] (-) TimerEvent: {}
+[13.490423] (-) TimerEvent: {}
+[13.591326] (-) TimerEvent: {}
+[13.692148] (-) TimerEvent: {}
+[13.793295] (-) TimerEvent: {}
+[13.894131] (-) TimerEvent: {}
+[13.994882] (-) TimerEvent: {}
+[14.095633] (-) TimerEvent: {}
+[14.196591] (-) TimerEvent: {}
+[14.297521] (-) TimerEvent: {}
+[14.398236] (-) TimerEvent: {}
+[14.498933] (-) TimerEvent: {}
+[14.599863] (-) TimerEvent: {}
+[14.700629] (-) TimerEvent: {}
+[14.801407] (-) TimerEvent: {}
+[14.838023] (amr_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[14.901607] (-) TimerEvent: {}
+[15.002397] (-) TimerEvent: {}
+[15.103409] (-) TimerEvent: {}
+[15.204225] (-) TimerEvent: {}
+[15.305057] (-) TimerEvent: {}
+[15.406376] (-) TimerEvent: {}
+[15.483781] (amr_msgs) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/sim_ws/src/build/amr_msgs\n'}
+[15.494562] (amr_msgs) CommandEnded: {'returncode': 0}
+[15.499699] (amr_msgs) JobProgress: {'identifier': 'amr_msgs', 'progress': 'build'}
+[15.507728] (amr_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/sim_ws/src/build/amr_msgs', '--', '-j8', '-l8'], 'cwd': '/workspaces/sim_ws/src/build/amr_msgs', 'env': OrderedDict([('HOSTNAME', 'humble'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/sim_ws/install/amr_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/helpers/browser.sh'), ('HOME', '/home/ros'), ('OLDPWD', '/workspaces/sim_ws'), ('TERM_PROGRAM_VERSION', '1.99.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-041a9283-536e-4de1-bc30-1f33b4901c5f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-b7fb7ebb-8de1-407b-81e1-3ba823c3e73f.sock'), ('COLCON_PREFIX_PATH', '/workspaces/sim_ws/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d3e0f4ad-d6e0-41e5-9651-6f18d8312593.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/ros/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-4a8da02f30.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/sim_ws/src/build/amr_msgs'), ('LC_ALL', 'C.UTF-8'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/workspaces/sim_ws/build/amr_simulation:/workspaces/sim_ws/install/amr_simulation/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_planning:/workspaces/sim_ws/install/amr_planning/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_control:/workspaces/sim_ws/install/amr_control/lib/python3.10/site-packages:/workspaces/sim_ws/install/amr_msgs/local/lib/python3.10/dist-packages:/workspaces/sim_ws/build/amr_bringup:/workspaces/sim_ws/install/amr_bringup/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble')]), 'shell': False}
+[15.509445] (-) TimerEvent: {}
+[15.609989] (-) TimerEvent: {}
+[15.711103] (-) TimerEvent: {}
+[15.773629] (amr_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[15.811285] (-) TimerEvent: {}
+[15.817904] (amr_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[15.840882] (amr_msgs) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_symlink_amr_msgs\n'}
+[15.911492] (-) TimerEvent: {}
+[16.012454] (-) TimerEvent: {}
+[16.113193] (-) TimerEvent: {}
+[16.214299] (-) TimerEvent: {}
+[16.315023] (-) TimerEvent: {}
+[16.373260] (amr_msgs) StdoutLine: {'line': b'[  6%] Built target amr_msgs__cpp\n'}
+[16.415219] (-) TimerEvent: {}
+[16.503210] (amr_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[16.507116] (amr_msgs) StdoutLine: {'line': b'creating amr_msgs.egg-info\n'}
+[16.513600] (amr_msgs) StdoutLine: {'line': b'writing amr_msgs.egg-info/PKG-INFO\n'}
+[16.516366] (-) TimerEvent: {}
+[16.523365] (amr_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[16.526375] (amr_msgs) StdoutLine: {'line': b'writing dependency_links to amr_msgs.egg-info/dependency_links.txt\n'}
+[16.530666] (amr_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[16.544074] (amr_msgs) StdoutLine: {'line': b'writing top-level names to amr_msgs.egg-info/top_level.txt\n'}
+[16.547569] (amr_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[16.555025] (amr_msgs) StdoutLine: {'line': b"writing manifest file 'amr_msgs.egg-info/SOURCES.txt'\n"}
+[16.603556] (amr_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_c.dir/rosidl_generator_c/amr_msgs/msg/detail/pose_stamped__functions.c.o\x1b[0m\n'}
+[16.609981] (amr_msgs) StdoutLine: {'line': b"reading manifest file 'amr_msgs.egg-info/SOURCES.txt'\n"}
+[16.616549] (-) TimerEvent: {}
+[16.657601] (amr_msgs) StdoutLine: {'line': b"writing manifest file 'amr_msgs.egg-info/SOURCES.txt'\n"}
+[16.716728] (-) TimerEvent: {}
+[16.751854] (amr_msgs) StdoutLine: {'line': b'[ 19%] Built target ament_cmake_python_build_amr_msgs_egg\n'}
+[16.816885] (-) TimerEvent: {}
+[16.917733] (-) TimerEvent: {}
+[17.018654] (-) TimerEvent: {}
+[17.040460] (amr_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libamr_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[17.048091] (amr_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/amr_msgs/msg/pose_stamped__type_support.cpp.o\x1b[0m\n'}
+[17.118831] (-) TimerEvent: {}
+[17.218788] (amr_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/amr_msgs/msg/detail/pose_stamped__type_support.cpp.o\x1b[0m\n'}
+[17.220179] (-) TimerEvent: {}
+[17.317341] (amr_msgs) StdoutLine: {'line': b'[ 29%] Built target amr_msgs__rosidl_generator_c\n'}
+[17.320500] (-) TimerEvent: {}
+[17.391896] (amr_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/amr_msgs/msg/detail/dds_fastrtps/pose_stamped__type_support.cpp.o\x1b[0m\n'}
+[17.420878] (-) TimerEvent: {}
+[17.463165] (amr_msgs) StdoutLine: {'line': b'[ 41%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[17.465433] (amr_msgs) StdoutLine: {'line': b'[ 41%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[17.468547] (amr_msgs) StdoutLine: {'line': b'[ 41%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[17.521072] (-) TimerEvent: {}
+[17.622029] (-) TimerEvent: {}
+[17.723189] (-) TimerEvent: {}
+[17.824509] (-) TimerEvent: {}
+[17.925905] (-) TimerEvent: {}
+[18.026962] (-) TimerEvent: {}
+[18.128458] (-) TimerEvent: {}
+[18.173628] (amr_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/amr_msgs/msg/pose_stamped__type_support.cpp.o\x1b[0m\n'}
+[18.228693] (-) TimerEvent: {}
+[18.267219] (amr_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libamr_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[18.309199] (amr_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/amr_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/amr_msgs/msg/detail/pose_stamped__type_support_c.cpp.o\x1b[0m\n'}
+[18.320848] (amr_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/amr_msgs/msg/detail/pose_stamped__type_support.c.o\x1b[0m\n'}
+[18.328914] (-) TimerEvent: {}
+[18.431474] (-) TimerEvent: {}
+[18.533037] (-) TimerEvent: {}
+[18.599886] (amr_msgs) StdoutLine: {'line': b'[ 54%] Built target amr_msgs__rosidl_typesupport_cpp\n'}
+[18.625843] (amr_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking CXX shared library libamr_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[18.633217] (-) TimerEvent: {}
+[18.722763] (amr_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libamr_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[18.733622] (-) TimerEvent: {}
+[18.835077] (-) TimerEvent: {}
+[18.937323] (-) TimerEvent: {}
+[18.944405] (amr_msgs) StdoutLine: {'line': b'[ 61%] Built target amr_msgs__rosidl_typesupport_c\n'}
+[19.019641] (amr_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking C shared library libamr_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[19.037496] (-) TimerEvent: {}
+[19.108015] (amr_msgs) StdoutLine: {'line': b'[ 64%] Built target amr_msgs__rosidl_typesupport_introspection_cpp\n'}
+[19.137728] (-) TimerEvent: {}
+[19.219078] (amr_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libamr_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[19.237958] (-) TimerEvent: {}
+[19.314018] (amr_msgs) StdoutLine: {'line': b'[ 67%] Built target amr_msgs__rosidl_typesupport_introspection_c\n'}
+[19.338106] (-) TimerEvent: {}
+[19.438934] (-) TimerEvent: {}
+[19.528744] (amr_msgs) StdoutLine: {'line': b'[ 67%] Built target amr_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[19.539076] (-) TimerEvent: {}
+[19.639962] (-) TimerEvent: {}
+[19.717001] (amr_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libamr_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[19.740127] (-) TimerEvent: {}
+[19.840954] (-) TimerEvent: {}
+[19.941913] (-) TimerEvent: {}
+[19.969811] (amr_msgs) StdoutLine: {'line': b'[ 70%] Built target amr_msgs__rosidl_typesupport_fastrtps_c\n'}
+[20.042060] (-) TimerEvent: {}
+[20.078370] (amr_msgs) StdoutLine: {'line': b'[ 70%] Built target amr_msgs\n'}
+[20.142243] (-) TimerEvent: {}
+[20.217495] (amr_msgs) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[20.242403] (-) TimerEvent: {}
+[20.343118] (-) TimerEvent: {}
+[20.444030] (-) TimerEvent: {}
+[20.545351] (-) TimerEvent: {}
+[20.646192] (-) TimerEvent: {}
+[20.699811] (amr_msgs) StdoutLine: {'line': b'[ 74%] Built target amr_msgs__py\n'}
+[20.746368] (-) TimerEvent: {}
+[20.841834] (amr_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_generator_py.dir/rosidl_generator_py/amr_msgs/msg/_pose_stamped_s.c.o\x1b[0m\n'}
+[20.846506] (-) TimerEvent: {}
+[20.947257] (-) TimerEvent: {}
+[21.047904] (-) TimerEvent: {}
+[21.148591] (-) TimerEvent: {}
+[21.249377] (-) TimerEvent: {}
+[21.350138] (-) TimerEvent: {}
+[21.381126] (amr_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/amr_msgs/libamr_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[21.450334] (-) TimerEvent: {}
+[21.551083] (-) TimerEvent: {}
+[21.610360] (amr_msgs) StdoutLine: {'line': b'[ 80%] Built target amr_msgs__rosidl_generator_py\n'}
+[21.651263] (-) TimerEvent: {}
+[21.752237] (-) TimerEvent: {}
+[21.767745] (amr_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[21.781861] (amr_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[21.810265] (amr_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/amr_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[21.852675] (-) TimerEvent: {}
+[21.953602] (-) TimerEvent: {}
+[22.054448] (-) TimerEvent: {}
+[22.155264] (-) TimerEvent: {}
+[22.256111] (-) TimerEvent: {}
+[22.357079] (-) TimerEvent: {}
+[22.458170] (-) TimerEvent: {}
+[22.462803] (amr_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/amr_msgs/amr_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[22.521827] (amr_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/amr_msgs/amr_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[22.547642] (amr_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/amr_msgs/amr_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[22.558483] (-) TimerEvent: {}
+[22.660240] (-) TimerEvent: {}
+[22.761315] (-) TimerEvent: {}
+[22.862194] (-) TimerEvent: {}
+[22.878250] (amr_msgs) StdoutLine: {'line': b'[100%] Built target amr_msgs__rosidl_typesupport_c__pyext\n'}
+[22.937517] (amr_msgs) StdoutLine: {'line': b'[100%] Built target amr_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[22.962355] (-) TimerEvent: {}
+[22.966940] (amr_msgs) StdoutLine: {'line': b'[100%] Built target amr_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[23.062532] (-) TimerEvent: {}
+[23.155187] (amr_msgs) CommandEnded: {'returncode': 0}
+[23.162710] (-) TimerEvent: {}
+[23.180817] (amr_msgs) JobProgress: {'identifier': 'amr_msgs', 'progress': 'install'}
+[23.210120] (amr_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/sim_ws/src/build/amr_msgs'], 'cwd': '/workspaces/sim_ws/src/build/amr_msgs', 'env': OrderedDict([('HOSTNAME', 'humble'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/sim_ws/install/amr_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/helpers/browser.sh'), ('HOME', '/home/ros'), ('OLDPWD', '/workspaces/sim_ws'), ('TERM_PROGRAM_VERSION', '1.99.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-041a9283-536e-4de1-bc30-1f33b4901c5f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-b7fb7ebb-8de1-407b-81e1-3ba823c3e73f.sock'), ('COLCON_PREFIX_PATH', '/workspaces/sim_ws/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d3e0f4ad-d6e0-41e5-9651-6f18d8312593.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/ros/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-4a8da02f30.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/sim_ws/src/build/amr_msgs'), ('LC_ALL', 'C.UTF-8'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/workspaces/sim_ws/build/amr_simulation:/workspaces/sim_ws/install/amr_simulation/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_planning:/workspaces/sim_ws/install/amr_planning/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_control:/workspaces/sim_ws/install/amr_control/lib/python3.10/site-packages:/workspaces/sim_ws/install/amr_msgs/local/lib/python3.10/dist-packages:/workspaces/sim_ws/build/amr_bringup:/workspaces/sim_ws/install/amr_bringup/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble')]), 'shell': False}
+[23.238154] (amr_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[23.251224] (amr_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[23.262867] (-) TimerEvent: {}
+[23.282706] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/ament_index/resource_index/rosidl_interfaces/amr_msgs\n'}
+[23.363118] (-) TimerEvent: {}
+[23.432994] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/pose_stamped__functions.h\n'}
+[23.463292] (-) TimerEvent: {}
+[23.509309] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/pose_stamped__struct.h\n'}
+[23.563576] (-) TimerEvent: {}
+[23.588543] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/pose_stamped__type_support.h\n'}
+[23.663625] (-) TimerEvent: {}
+[23.664499] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/include/amr_msgs/amr_msgs/msg/pose_stamped.h\n'}
+[23.737792] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/include/amr_msgs/amr_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[23.763828] (-) TimerEvent: {}
+[23.825925] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/environment/library_path.sh\n'}
+[23.864011] (-) TimerEvent: {}
+[23.890283] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/environment/library_path.dsv\n'}
+[23.964212] (-) TimerEvent: {}
+[24.061478] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/pose_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[24.064311] (-) TimerEvent: {}
+[24.141940] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/include/amr_msgs/amr_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[24.164505] (-) TimerEvent: {}
+[24.265734] (-) TimerEvent: {}
+[24.266548] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/pose_stamped__rosidl_typesupport_introspection_c.h\n'}
+[24.366106] (-) TimerEvent: {}
+[24.416997] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/include/amr_msgs/amr_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[24.466355] (-) TimerEvent: {}
+[24.567550] (-) TimerEvent: {}
+[24.575470] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/pose_stamped__builder.hpp\n'}
+[24.665049] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/pose_stamped__struct.hpp\n'}
+[24.667661] (-) TimerEvent: {}
+[24.751525] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/pose_stamped__traits.hpp\n'}
+[24.767944] (-) TimerEvent: {}
+[24.835994] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/pose_stamped__type_support.hpp\n'}
+[24.868266] (-) TimerEvent: {}
+[24.918655] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/include/amr_msgs/amr_msgs/msg/pose_stamped.hpp\n'}
+[24.968410] (-) TimerEvent: {}
+[24.994778] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/include/amr_msgs/amr_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[25.068596] (-) TimerEvent: {}
+[25.169487] (-) TimerEvent: {}
+[25.208816] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/pose_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[25.269675] (-) TimerEvent: {}
+[25.289328] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/include/amr_msgs/amr_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[25.369848] (-) TimerEvent: {}
+[25.406996] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/include/amr_msgs/amr_msgs/msg/detail/pose_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[25.470007] (-) TimerEvent: {}
+[25.484478] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/environment/pythonpath.sh\n'}
+[25.543180] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/environment/pythonpath.dsv\n'}
+[25.570257] (-) TimerEvent: {}
+[25.671291] (-) TimerEvent: {}
+[25.677273] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs-1.0.0-py3.10.egg-info/PKG-INFO\n'}
+[25.771513] (-) TimerEvent: {}
+[25.772261] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs-1.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[25.870564] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs-1.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[25.872607] (-) TimerEvent: {}
+[25.973437] (-) TimerEvent: {}
+[25.999587] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs-1.0.0-py3.10.egg-info/top_level.txt\n'}
+[26.073622] (-) TimerEvent: {}
+[26.174658] (-) TimerEvent: {}
+[26.276058] (-) TimerEvent: {}
+[26.376970] (-) TimerEvent: {}
+[26.432287] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs/__init__.py\n'}
+[26.477212] (-) TimerEvent: {}
+[26.564345] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[26.577486] (-) TimerEvent: {}
+[26.678698] (-) TimerEvent: {}
+[26.699585] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[26.778904] (-) TimerEvent: {}
+[26.793883] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs/_amr_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[26.879101] (-) TimerEvent: {}
+[26.888599] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs/amr_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[26.979261] (-) TimerEvent: {}
+[26.984811] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs/amr_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[27.077197] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs/amr_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[27.079344] (-) TimerEvent: {}
+[27.176939] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs/libamr_msgs__rosidl_generator_py.so\n'}
+[27.179512] (-) TimerEvent: {}
+[27.280375] (-) TimerEvent: {}
+[27.316069] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs/msg/__init__.py\n'}
+[27.380584] (-) TimerEvent: {}
+[27.413224] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs/msg/_pose_stamped.py\n'}
+[27.480912] (-) TimerEvent: {}
+[27.522685] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs/msg/_pose_stamped_s.c\n'}
+[27.581117] (-) TimerEvent: {}
+[27.680179] (amr_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs/amr_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[27.681823] (-) TimerEvent: {}
+[27.751581] (amr_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs/amr_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[27.782048] (-) TimerEvent: {}
+[27.828740] (amr_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs/amr_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[27.865675] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/msg/PoseStamped.idl\n'}
+[27.882217] (-) TimerEvent: {}
+[27.940183] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/msg/PoseStamped.msg\n'}
+[27.982420] (-) TimerEvent: {}
+[28.044578] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/ament_index/resource_index/package_run_dependencies/amr_msgs\n'}
+[28.082631] (-) TimerEvent: {}
+[28.163114] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/ament_index/resource_index/parent_prefix_path/amr_msgs\n'}
+[28.182844] (-) TimerEvent: {}
+[28.250971] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/environment/ament_prefix_path.sh\n'}
+[28.283039] (-) TimerEvent: {}
+[28.330426] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/environment/ament_prefix_path.dsv\n'}
+[28.383227] (-) TimerEvent: {}
+[28.407193] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/environment/path.sh\n'}
+[28.483582] (-) TimerEvent: {}
+[28.485889] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/environment/path.dsv\n'}
+[28.565750] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/local_setup.bash\n'}
+[28.583787] (-) TimerEvent: {}
+[28.640186] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/local_setup.sh\n'}
+[28.683955] (-) TimerEvent: {}
+[28.706966] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/local_setup.zsh\n'}
+[28.778463] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/local_setup.dsv\n'}
+[28.784222] (-) TimerEvent: {}
+[28.846594] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/package.dsv\n'}
+[28.884462] (-) TimerEvent: {}
+[28.943387] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/ament_index/resource_index/packages/amr_msgs\n'}
+[28.984623] (-) TimerEvent: {}
+[29.042142] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[29.084916] (-) TimerEvent: {}
+[29.118893] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[29.185026] (-) TimerEvent: {}
+[29.199030] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[29.280977] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[29.285389] (-) TimerEvent: {}
+[29.354672] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[29.385583] (-) TimerEvent: {}
+[29.425404] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[29.485786] (-) TimerEvent: {}
+[29.500396] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[29.577843] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/amr_msgsConfig.cmake\n'}
+[29.585994] (-) TimerEvent: {}
+[29.648402] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/amr_msgsConfig-version.cmake\n'}
+[29.686179] (-) TimerEvent: {}
+[29.716709] (amr_msgs) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/package.xml\n'}
+[29.786369] (-) TimerEvent: {}
+[29.791177] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/lib/libamr_msgs__rosidl_generator_c.so\n'}
+[29.886567] (-) TimerEvent: {}
+[29.931509] (amr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/sim_ws/src/install/amr_msgs/lib/libamr_msgs__rosidl_generator_c.so" to ""\n'}
+[29.955580] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[29.986712] (-) TimerEvent: {}
+[30.087455] (-) TimerEvent: {}
+[30.092347] (amr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/sim_ws/src/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[30.117354] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_introspection_c.so\n'}
+[30.187724] (-) TimerEvent: {}
+[30.252163] (amr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/sim_ws/src/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[30.275414] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_c.so\n'}
+[30.287834] (-) TimerEvent: {}
+[30.389057] (-) TimerEvent: {}
+[30.407808] (amr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/sim_ws/src/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_c.so" to ""\n'}
+[30.434168] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[30.489253] (-) TimerEvent: {}
+[30.579547] (amr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/sim_ws/src/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[30.589400] (-) TimerEvent: {}
+[30.604057] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[30.689608] (-) TimerEvent: {}
+[30.736586] (amr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/sim_ws/src/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[30.758747] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_cpp.so\n'}
+[30.789835] (-) TimerEvent: {}
+[30.889470] (amr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/sim_ws/src/install/amr_msgs/lib/libamr_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[30.891102] (-) TimerEvent: {}
+[30.991658] (-) TimerEvent: {}
+[31.092442] (-) TimerEvent: {}
+[31.193310] (-) TimerEvent: {}
+[31.294105] (-) TimerEvent: {}
+[31.395096] (-) TimerEvent: {}
+[31.496162] (-) TimerEvent: {}
+[31.597114] (-) TimerEvent: {}
+[31.599696] (amr_msgs) StdoutLine: {'line': b"Listing '/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs'...\n"}
+[31.601828] (amr_msgs) StdoutLine: {'line': b"Compiling '/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs/__init__.py'...\n"}
+[31.603607] (amr_msgs) StdoutLine: {'line': b"Listing '/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs/msg'...\n"}
+[31.605548] (amr_msgs) StdoutLine: {'line': b"Compiling '/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs/msg/__init__.py'...\n"}
+[31.608191] (amr_msgs) StdoutLine: {'line': b"Compiling '/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages/amr_msgs/msg/_pose_stamped.py'...\n"}
+[31.648579] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/lib/libamr_msgs__rosidl_generator_py.so\n'}
+[31.697269] (-) TimerEvent: {}
+[31.798255] (-) TimerEvent: {}
+[31.826248] (amr_msgs) StdoutLine: {'line': b'-- Set runtime path of "/workspaces/sim_ws/src/install/amr_msgs/lib/libamr_msgs__rosidl_generator_py.so" to ""\n'}
+[31.874902] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_generator_cExport.cmake\n'}
+[31.898448] (-) TimerEvent: {}
+[31.999283] (-) TimerEvent: {}
+[32.038388] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[32.099474] (-) TimerEvent: {}
+[32.200709] (-) TimerEvent: {}
+[32.214340] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[32.300888] (-) TimerEvent: {}
+[32.360680] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[32.401060] (-) TimerEvent: {}
+[32.491673] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[32.501269] (-) TimerEvent: {}
+[32.601176] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[32.602370] (-) TimerEvent: {}
+[32.703038] (-) TimerEvent: {}
+[32.706975] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_cExport.cmake\n'}
+[32.803273] (-) TimerEvent: {}
+[32.809025] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[32.903424] (-) TimerEvent: {}
+[32.924684] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_generator_cppExport.cmake\n'}
+[33.003596] (-) TimerEvent: {}
+[33.031707] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[33.103763] (-) TimerEvent: {}
+[33.143286] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[33.203945] (-) TimerEvent: {}
+[33.247355] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[33.304103] (-) TimerEvent: {}
+[33.358480] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[33.404304] (-) TimerEvent: {}
+[33.469086] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[33.504453] (-) TimerEvent: {}
+[33.570767] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/amr_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[33.604629] (-) TimerEvent: {}
+[33.679272] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_generator_pyExport.cmake\n'}
+[33.704860] (-) TimerEvent: {}
+[33.789944] (amr_msgs) StdoutLine: {'line': b'-- Installing: /workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake/export_amr_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[33.805068] (-) TimerEvent: {}
+[33.893876] (amr_msgs) CommandEnded: {'returncode': 0}
+[33.905228] (-) TimerEvent: {}
+[34.006064] (-) TimerEvent: {}
+[34.107266] (-) TimerEvent: {}
+[34.208138] (-) TimerEvent: {}
+[34.315060] (-) TimerEvent: {}
+[34.416019] (-) TimerEvent: {}
+[34.516885] (-) TimerEvent: {}
+[34.617615] (-) TimerEvent: {}
+[34.724006] (-) TimerEvent: {}
+[34.824755] (-) TimerEvent: {}
+[34.925483] (-) TimerEvent: {}
+[35.026212] (-) TimerEvent: {}
+[35.126988] (-) TimerEvent: {}
+[35.227757] (-) TimerEvent: {}
+[35.335822] (-) TimerEvent: {}
+[35.436581] (-) TimerEvent: {}
+[35.537217] (-) TimerEvent: {}
+[35.638202] (-) TimerEvent: {}
+[35.739408] (-) TimerEvent: {}
+[35.838779] (amr_msgs) JobEnded: {'identifier': 'amr_msgs', 'rc': 0}
+[35.850090] (-) TimerEvent: {}
+[35.850695] (amr_control) JobStarted: {'identifier': 'amr_control'}
+[35.916832] (amr_localization) JobStarted: {'identifier': 'amr_localization'}
+[35.950249] (-) TimerEvent: {}
+[36.003284] (amr_localization_cpp) JobStarted: {'identifier': 'amr_localization_cpp'}
+[36.023573] (amr_simulation) JobStarted: {'identifier': 'amr_simulation'}
+[36.050511] (-) TimerEvent: {}
+[36.151562] (-) TimerEvent: {}
+[36.254662] (-) TimerEvent: {}
+[36.355739] (-) TimerEvent: {}
+[36.456529] (-) TimerEvent: {}
+[36.557346] (-) TimerEvent: {}
+[36.658162] (-) TimerEvent: {}
+[36.758878] (-) TimerEvent: {}
+[36.859725] (-) TimerEvent: {}
+[36.960409] (-) TimerEvent: {}
+[37.061685] (-) TimerEvent: {}
+[37.162613] (-) TimerEvent: {}
+[37.263480] (-) TimerEvent: {}
+[37.364351] (-) TimerEvent: {}
+[37.465384] (-) TimerEvent: {}
+[37.566301] (-) TimerEvent: {}
+[37.667080] (-) TimerEvent: {}
+[37.767688] (-) TimerEvent: {}
+[37.868411] (-) TimerEvent: {}
+[37.969114] (-) TimerEvent: {}
+[38.037326] (amr_localization_cpp) JobProgress: {'identifier': 'amr_localization_cpp', 'progress': 'cmake'}
+[38.069291] (-) TimerEvent: {}
+[38.079994] (amr_localization_cpp) Command: {'cmd': ['/usr/bin/cmake', '/workspaces/sim_ws/src/amr_localization_cpp', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/workspaces/sim_ws/src/install/amr_localization_cpp'], 'cwd': '/workspaces/sim_ws/src/build/amr_localization_cpp', 'env': OrderedDict([('HOSTNAME', 'humble'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/sim_ws/src/install/amr_msgs/lib:/workspaces/sim_ws/install/amr_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/helpers/browser.sh'), ('HOME', '/home/ros'), ('OLDPWD', '/workspaces/sim_ws'), ('TERM_PROGRAM_VERSION', '1.99.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-041a9283-536e-4de1-bc30-1f33b4901c5f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-b7fb7ebb-8de1-407b-81e1-3ba823c3e73f.sock'), ('COLCON_PREFIX_PATH', '/workspaces/sim_ws/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d3e0f4ad-d6e0-41e5-9651-6f18d8312593.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/ros/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-4a8da02f30.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/workspaces/sim_ws/src/install/amr_msgs:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/sim_ws/src/build/amr_localization_cpp'), ('LC_ALL', 'C.UTF-8'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages:/workspaces/sim_ws/build/amr_simulation:/workspaces/sim_ws/install/amr_simulation/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_planning:/workspaces/sim_ws/install/amr_planning/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_control:/workspaces/sim_ws/install/amr_control/lib/python3.10/site-packages:/workspaces/sim_ws/install/amr_msgs/local/lib/python3.10/dist-packages:/workspaces/sim_ws/build/amr_bringup:/workspaces/sim_ws/install/amr_bringup/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/sim_ws/src/install/amr_msgs:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble')]), 'shell': False}
+[38.169484] (-) TimerEvent: {}
+[38.270209] (-) TimerEvent: {}
+[38.371209] (-) TimerEvent: {}
+[38.472613] (-) TimerEvent: {}
+[38.573527] (-) TimerEvent: {}
+[38.674426] (-) TimerEvent: {}
+[38.775305] (-) TimerEvent: {}
+[38.876186] (-) TimerEvent: {}
+[38.977024] (-) TimerEvent: {}
+[39.077901] (-) TimerEvent: {}
+[39.178792] (-) TimerEvent: {}
+[39.196252] (amr_localization_cpp) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[39.280308] (-) TimerEvent: {}
+[39.384133] (-) TimerEvent: {}
+[39.485330] (-) TimerEvent: {}
+[39.586795] (-) TimerEvent: {}
+[39.688249] (-) TimerEvent: {}
+[39.789119] (-) TimerEvent: {}
+[39.890112] (-) TimerEvent: {}
+[39.991240] (-) TimerEvent: {}
+[40.058631] (amr_localization_cpp) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[40.091438] (-) TimerEvent: {}
+[40.192751] (-) TimerEvent: {}
+[40.277102] (amr_localization_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[40.292934] (-) TimerEvent: {}
+[40.394044] (-) TimerEvent: {}
+[40.495344] (-) TimerEvent: {}
+[40.596866] (-) TimerEvent: {}
+[40.697931] (-) TimerEvent: {}
+[40.798900] (-) TimerEvent: {}
+[40.900448] (-) TimerEvent: {}
+[41.002746] (-) TimerEvent: {}
+[41.104576] (-) TimerEvent: {}
+[41.205697] (-) TimerEvent: {}
+[41.307784] (-) TimerEvent: {}
+[41.408832] (-) TimerEvent: {}
+[41.509786] (-) TimerEvent: {}
+[41.610634] (-) TimerEvent: {}
+[41.711647] (-) TimerEvent: {}
+[41.812745] (-) TimerEvent: {}
+[41.913735] (-) TimerEvent: {}
+[42.014825] (-) TimerEvent: {}
+[42.115748] (-) TimerEvent: {}
+[42.201308] (amr_simulation) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/workspaces/sim_ws/src/build/amr_simulation/build', '--no-deps', 'symlink_data'], 'cwd': '/workspaces/sim_ws/src/build/amr_simulation', 'env': {'HOSTNAME': 'humble', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/workspaces/sim_ws/src/install/amr_msgs/lib:/workspaces/sim_ws/install/amr_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/helpers/browser.sh', 'HOME': '/home/ros', 'OLDPWD': '/workspaces/sim_ws', 'TERM_PROGRAM_VERSION': '1.99.0', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-041a9283-536e-4de1-bc30-1f33b4901c5f.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'WAYLAND_DISPLAY': 'vscode-wayland-b7fb7ebb-8de1-407b-81e1-3ba823c3e73f.sock', 'COLCON_PREFIX_PATH': '/workspaces/sim_ws/install', 'ROS_DISTRO': 'humble', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-d3e0f4ad-d6e0-41e5-9651-6f18d8312593.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/tmp/user/1000', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/.X11-unix/X0","/home/ros/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/user/1000/vscode-git-4a8da02f30.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/workspaces/sim_ws/src/install/amr_msgs:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X0', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/workspaces/sim_ws/src/build/amr_simulation', 'LC_ALL': 'C.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/workspaces/sim_ws/src/build/amr_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/sim_ws/src/install/amr_simulation/lib/python3.10/site-packages:/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages:/workspaces/sim_ws/build/amr_simulation:/workspaces/sim_ws/install/amr_simulation/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_planning:/workspaces/sim_ws/install/amr_planning/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_control:/workspaces/sim_ws/install/amr_control/lib/python3.10/site-packages:/workspaces/sim_ws/install/amr_msgs/local/lib/python3.10/dist-packages:/workspaces/sim_ws/build/amr_bringup:/workspaces/sim_ws/install/amr_bringup/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/workspaces/sim_ws/src/install/amr_msgs:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_msgs'}, 'shell': False}
+[42.231075] (-) TimerEvent: {}
+[42.281847] (amr_localization) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/workspaces/sim_ws/src/build/amr_localization/build', '--no-deps', 'symlink_data'], 'cwd': '/workspaces/sim_ws/src/build/amr_localization', 'env': {'HOSTNAME': 'humble', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/workspaces/sim_ws/src/install/amr_msgs/lib:/workspaces/sim_ws/install/amr_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/helpers/browser.sh', 'HOME': '/home/ros', 'OLDPWD': '/workspaces/sim_ws', 'TERM_PROGRAM_VERSION': '1.99.0', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-041a9283-536e-4de1-bc30-1f33b4901c5f.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'WAYLAND_DISPLAY': 'vscode-wayland-b7fb7ebb-8de1-407b-81e1-3ba823c3e73f.sock', 'COLCON_PREFIX_PATH': '/workspaces/sim_ws/install', 'ROS_DISTRO': 'humble', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-d3e0f4ad-d6e0-41e5-9651-6f18d8312593.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/tmp/user/1000', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/.X11-unix/X0","/home/ros/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/user/1000/vscode-git-4a8da02f30.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/workspaces/sim_ws/src/install/amr_msgs:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X0', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/workspaces/sim_ws/src/build/amr_localization', 'LC_ALL': 'C.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/workspaces/sim_ws/src/build/amr_localization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/sim_ws/src/install/amr_localization/lib/python3.10/site-packages:/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages:/workspaces/sim_ws/build/amr_simulation:/workspaces/sim_ws/install/amr_simulation/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_planning:/workspaces/sim_ws/install/amr_planning/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_control:/workspaces/sim_ws/install/amr_control/lib/python3.10/site-packages:/workspaces/sim_ws/install/amr_msgs/local/lib/python3.10/dist-packages:/workspaces/sim_ws/build/amr_bringup:/workspaces/sim_ws/install/amr_bringup/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/workspaces/sim_ws/src/install/amr_msgs:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_msgs'}, 'shell': False}
+[42.331270] (-) TimerEvent: {}
+[42.375215] (amr_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/workspaces/sim_ws/src/build/amr_control/build', '--no-deps', 'symlink_data'], 'cwd': '/workspaces/sim_ws/src/build/amr_control', 'env': {'HOSTNAME': 'humble', 'GIT_ASKPASS': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/workspaces/sim_ws/src/install/amr_msgs/lib:/workspaces/sim_ws/install/amr_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/helpers/browser.sh', 'HOME': '/home/ros', 'OLDPWD': '/workspaces/sim_ws', 'TERM_PROGRAM_VERSION': '1.99.0', 'VSCODE_IPC_HOOK_CLI': '/tmp/vscode-ipc-041a9283-536e-4de1-bc30-1f33b4901c5f.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/node', 'COLORTERM': 'truecolor', 'REMOTE_CONTAINERS': 'true', 'WAYLAND_DISPLAY': 'vscode-wayland-b7fb7ebb-8de1-407b-81e1-3ba823c3e73f.sock', 'COLCON_PREFIX_PATH': '/workspaces/sim_ws/install', 'ROS_DISTRO': 'humble', 'REMOTE_CONTAINERS_IPC': '/tmp/vscode-remote-containers-ipc-d3e0f4ad-d6e0-41e5-9651-6f18d8312593.sock', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'XDG_RUNTIME_DIR': '/tmp/user/1000', 'REMOTE_CONTAINERS_SOCKETS': '["/tmp/.X11-unix/X0","/home/ros/.gnupg/S.gpg-agent"]', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/tmp/user/1000/vscode-git-4a8da02f30.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/workspaces/sim_ws/src/install/amr_msgs:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble', 'REMOTE_CONTAINERS_DISPLAY_SOCK': '/tmp/.X11-unix/X0', 'SHELL': '/bin/bash', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/workspaces/sim_ws/src/build/amr_control', 'LC_ALL': 'C.UTF-8', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/workspaces/sim_ws/src/build/amr_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/sim_ws/src/install/amr_control/lib/python3.10/site-packages:/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages:/workspaces/sim_ws/build/amr_simulation:/workspaces/sim_ws/install/amr_simulation/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_planning:/workspaces/sim_ws/install/amr_planning/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_control:/workspaces/sim_ws/install/amr_control/lib/python3.10/site-packages:/workspaces/sim_ws/install/amr_msgs/local/lib/python3.10/dist-packages:/workspaces/sim_ws/build/amr_bringup:/workspaces/sim_ws/install/amr_bringup/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/workspaces/sim_ws/src/install/amr_msgs:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_msgs'}, 'shell': False}
+[42.431439] (-) TimerEvent: {}
+[42.532734] (-) TimerEvent: {}
+[42.633683] (-) TimerEvent: {}
+[42.735153] (-) TimerEvent: {}
+[42.837460] (-) TimerEvent: {}
+[42.862349] (amr_localization_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[42.926344] (amr_localization_cpp) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[42.929304] (amr_localization_cpp) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[42.931285] (amr_localization_cpp) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[42.937651] (-) TimerEvent: {}
+[43.040110] (-) TimerEvent: {}
+[43.060555] (amr_localization_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[43.140364] (-) TimerEvent: {}
+[43.241729] (-) TimerEvent: {}
+[43.343594] (-) TimerEvent: {}
+[43.444931] (-) TimerEvent: {}
+[43.546103] (-) TimerEvent: {}
+[43.647460] (-) TimerEvent: {}
+[43.748592] (-) TimerEvent: {}
+[43.849636] (-) TimerEvent: {}
+[43.950636] (-) TimerEvent: {}
+[44.051622] (-) TimerEvent: {}
+[44.152620] (-) TimerEvent: {}
+[44.253857] (-) TimerEvent: {}
+[44.354803] (-) TimerEvent: {}
+[44.455853] (-) TimerEvent: {}
+[44.557057] (-) TimerEvent: {}
+[44.658331] (-) TimerEvent: {}
+[44.759210] (-) TimerEvent: {}
+[44.807181] (amr_localization) StdoutLine: {'line': b'running develop\n'}
+[44.859394] (-) TimerEvent: {}
+[44.961246] (-) TimerEvent: {}
+[45.006547] (amr_simulation) StdoutLine: {'line': b'running develop\n'}
+[45.061447] (-) TimerEvent: {}
+[45.152412] (amr_control) StdoutLine: {'line': b'running develop\n'}
+[45.161627] (-) TimerEvent: {}
+[45.262579] (-) TimerEvent: {}
+[45.364134] (-) TimerEvent: {}
+[45.465061] (-) TimerEvent: {}
+[45.566380] (-) TimerEvent: {}
+[45.567420] (amr_localization) StdoutLine: {'line': b'running egg_info\n'}
+[45.569425] (amr_localization) StdoutLine: {'line': b'creating amr_localization.egg-info\n'}
+[45.572162] (amr_localization) StdoutLine: {'line': b'writing amr_localization.egg-info/PKG-INFO\n'}
+[45.589981] (amr_localization) StdoutLine: {'line': b'writing dependency_links to amr_localization.egg-info/dependency_links.txt\n'}
+[45.601033] (amr_localization) StdoutLine: {'line': b'writing entry points to amr_localization.egg-info/entry_points.txt\n'}
+[45.609716] (amr_localization) StdoutLine: {'line': b'writing requirements to amr_localization.egg-info/requires.txt\n'}
+[45.616370] (amr_localization) StdoutLine: {'line': b'writing top-level names to amr_localization.egg-info/top_level.txt\n'}
+[45.626261] (amr_localization) StdoutLine: {'line': b"writing manifest file 'amr_localization.egg-info/SOURCES.txt'\n"}
+[45.666550] (-) TimerEvent: {}
+[45.751359] (amr_localization) StdoutLine: {'line': b"reading manifest file 'amr_localization.egg-info/SOURCES.txt'\n"}
+[45.765888] (amr_simulation) StdoutLine: {'line': b'running egg_info\n'}
+[45.768385] (-) TimerEvent: {}
+[45.769135] (amr_simulation) StdoutLine: {'line': b'creating amr_simulation.egg-info\n'}
+[45.771870] (amr_simulation) StdoutLine: {'line': b'writing amr_simulation.egg-info/PKG-INFO\n'}
+[45.789368] (amr_simulation) StdoutLine: {'line': b'writing dependency_links to amr_simulation.egg-info/dependency_links.txt\n'}
+[45.798924] (amr_simulation) StdoutLine: {'line': b'writing entry points to amr_simulation.egg-info/entry_points.txt\n'}
+[45.806322] (amr_simulation) StdoutLine: {'line': b'writing requirements to amr_simulation.egg-info/requires.txt\n'}
+[45.816972] (amr_simulation) StdoutLine: {'line': b'writing top-level names to amr_simulation.egg-info/top_level.txt\n'}
+[45.826925] (amr_localization_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[45.863751] (amr_simulation) StdoutLine: {'line': b"writing manifest file 'amr_simulation.egg-info/SOURCES.txt'\n"}
+[45.873373] (-) TimerEvent: {}
+[45.886795] (amr_control) StdoutLine: {'line': b'running egg_info\n'}
+[45.905137] (amr_control) StdoutLine: {'line': b'creating amr_control.egg-info\n'}
+[45.930850] (amr_control) StdoutLine: {'line': b'writing amr_control.egg-info/PKG-INFO\n'}
+[45.954526] (amr_control) StdoutLine: {'line': b'writing dependency_links to amr_control.egg-info/dependency_links.txt\n'}
+[45.965445] (amr_control) StdoutLine: {'line': b'writing entry points to amr_control.egg-info/entry_points.txt\n'}
+[45.971041] (amr_localization_cpp) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[45.973836] (-) TimerEvent: {}
+[45.974860] (amr_localization_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[45.978139] (amr_localization_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[45.984520] (amr_control) StdoutLine: {'line': b'writing requirements to amr_control.egg-info/requires.txt\n'}
+[45.987526] (amr_control) StdoutLine: {'line': b'writing top-level names to amr_control.egg-info/top_level.txt\n'}
+[45.990296] (amr_localization) StdoutLine: {'line': b"writing manifest file 'amr_localization.egg-info/SOURCES.txt'\n"}
+[45.996926] (amr_control) StdoutLine: {'line': b"writing manifest file 'amr_control.egg-info/SOURCES.txt'\n"}
+[46.039907] (amr_localization) StdoutLine: {'line': b'running build_ext\n'}
+[46.042312] (amr_localization) StdoutLine: {'line': b'Creating /workspaces/sim_ws/src/install/amr_localization/lib/python3.10/site-packages/amr-localization.egg-link (link to .)\n'}
+[46.062325] (amr_simulation) StdoutLine: {'line': b"reading manifest file 'amr_simulation.egg-info/SOURCES.txt'\n"}
+[46.074174] (-) TimerEvent: {}
+[46.099087] (amr_localization) StdoutLine: {'line': b'Installing particle_filter script to /workspaces/sim_ws/src/install/amr_localization/lib/amr_localization\n'}
+[46.142506] (amr_control) StdoutLine: {'line': b"reading manifest file 'amr_control.egg-info/SOURCES.txt'\n"}
+[46.158660] (amr_localization) StdoutLine: {'line': b'\n'}
+[46.161407] (amr_localization) StdoutLine: {'line': b'Installed /workspaces/sim_ws/src/build/amr_localization\n'}
+[46.168317] (amr_localization) StdoutLine: {'line': b'running symlink_data\n'}
+[46.174353] (-) TimerEvent: {}
+[46.192467] (amr_localization) StdoutLine: {'line': b'creating /workspaces/sim_ws/src/install/amr_localization/share/ament_index\n'}
+[46.198564] (amr_localization) StdoutLine: {'line': b'creating /workspaces/sim_ws/src/install/amr_localization/share/ament_index/resource_index\n'}
+[46.207164] (amr_localization) StdoutLine: {'line': b'creating /workspaces/sim_ws/src/install/amr_localization/share/ament_index/resource_index/packages\n'}
+[46.232676] (amr_simulation) StdoutLine: {'line': b"writing manifest file 'amr_simulation.egg-info/SOURCES.txt'\n"}
+[46.251721] (amr_localization) StdoutLine: {'line': b'symbolically linking /workspaces/sim_ws/src/build/amr_localization/resource/amr_localization -> /workspaces/sim_ws/src/install/amr_localization/share/ament_index/resource_index/packages\n'}
+[46.274626] (-) TimerEvent: {}
+[46.287969] (amr_localization_cpp) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[46.294450] (amr_simulation) StdoutLine: {'line': b'running build_ext\n'}
+[46.297168] (amr_simulation) StdoutLine: {'line': b'Creating /workspaces/sim_ws/src/install/amr_simulation/lib/python3.10/site-packages/amr-simulation.egg-link (link to .)\n'}
+[46.304158] (amr_localization) StdoutLine: {'line': b'symbolically linking /workspaces/sim_ws/src/build/amr_localization/package.xml -> /workspaces/sim_ws/src/install/amr_localization/share/amr_localization\n'}
+[46.316004] (amr_control) StdoutLine: {'line': b"writing manifest file 'amr_control.egg-info/SOURCES.txt'\n"}
+[46.351857] (amr_simulation) StdoutLine: {'line': b'Installing coppeliasim script to /workspaces/sim_ws/src/install/amr_simulation/lib/amr_simulation\n'}
+[46.367023] (amr_control) StdoutLine: {'line': b'running build_ext\n'}
+[46.369572] (amr_control) StdoutLine: {'line': b'Creating /workspaces/sim_ws/src/install/amr_control/lib/python3.10/site-packages/amr-control.egg-link (link to .)\n'}
+[46.375002] (-) TimerEvent: {}
+[46.394124] (amr_simulation) StdoutLine: {'line': b'\n'}
+[46.396574] (amr_simulation) StdoutLine: {'line': b'Installed /workspaces/sim_ws/src/build/amr_simulation\n'}
+[46.403802] (amr_simulation) StdoutLine: {'line': b'running symlink_data\n'}
+[46.410946] (amr_localization) CommandEnded: {'returncode': 0}
+[46.415023] (amr_control) StdoutLine: {'line': b'Installing pure_pursuit script to /workspaces/sim_ws/src/install/amr_control/lib/amr_control\n'}
+[46.419829] (amr_simulation) StdoutLine: {'line': b'creating /workspaces/sim_ws/src/install/amr_simulation/share/ament_index\n'}
+[46.425587] (amr_simulation) StdoutLine: {'line': b'creating /workspaces/sim_ws/src/install/amr_simulation/share/ament_index/resource_index\n'}
+[46.432017] (amr_simulation) StdoutLine: {'line': b'creating /workspaces/sim_ws/src/install/amr_simulation/share/ament_index/resource_index/packages\n'}
+[46.444834] (amr_control) StdoutLine: {'line': b'Installing wall_follower script to /workspaces/sim_ws/src/install/amr_control/lib/amr_control\n'}
+[46.474281] (amr_simulation) StdoutLine: {'line': b'symbolically linking /workspaces/sim_ws/src/build/amr_simulation/resource/amr_simulation -> /workspaces/sim_ws/src/install/amr_simulation/share/ament_index/resource_index/packages\n'}
+[46.478144] (-) TimerEvent: {}
+[46.500193] (amr_control) StdoutLine: {'line': b'\n'}
+[46.502896] (amr_control) StdoutLine: {'line': b'Installed /workspaces/sim_ws/src/build/amr_control\n'}
+[46.511644] (amr_control) StdoutLine: {'line': b'running symlink_data\n'}
+[46.517321] (amr_simulation) StdoutLine: {'line': b'symbolically linking /workspaces/sim_ws/src/build/amr_simulation/package.xml -> /workspaces/sim_ws/src/install/amr_simulation/share/amr_simulation\n'}
+[46.530618] (amr_control) StdoutLine: {'line': b'creating /workspaces/sim_ws/src/install/amr_control/share/ament_index\n'}
+[46.534253] (amr_control) StdoutLine: {'line': b'creating /workspaces/sim_ws/src/install/amr_control/share/ament_index/resource_index\n'}
+[46.539963] (amr_control) StdoutLine: {'line': b'creating /workspaces/sim_ws/src/install/amr_control/share/ament_index/resource_index/packages\n'}
+[46.573684] (amr_control) StdoutLine: {'line': b'symbolically linking /workspaces/sim_ws/src/build/amr_control/resource/amr_control -> /workspaces/sim_ws/src/install/amr_control/share/ament_index/resource_index/packages\n'}
+[46.578321] (-) TimerEvent: {}
+[46.604950] (amr_control) StdoutLine: {'line': b'symbolically linking /workspaces/sim_ws/src/build/amr_control/package.xml -> /workspaces/sim_ws/src/install/amr_control/share/amr_control\n'}
+[46.678580] (-) TimerEvent: {}
+[46.779462] (-) TimerEvent: {}
+[46.880437] (-) TimerEvent: {}
+[46.938088] (amr_localization) JobEnded: {'identifier': 'amr_localization', 'rc': 0}
+[46.950868] (amr_simulation) CommandEnded: {'returncode': 0}
+[46.980629] (-) TimerEvent: {}
+[47.081699] (-) TimerEvent: {}
+[47.182644] (-) TimerEvent: {}
+[47.283481] (-) TimerEvent: {}
+[47.384348] (amr_simulation) JobEnded: {'identifier': 'amr_simulation', 'rc': 0}
+[47.398372] (-) TimerEvent: {}
+[47.399050] (amr_control) CommandEnded: {'returncode': 0}
+[47.498536] (-) TimerEvent: {}
+[47.603372] (-) TimerEvent: {}
+[47.704403] (-) TimerEvent: {}
+[47.803136] (amr_control) JobEnded: {'identifier': 'amr_control', 'rc': 0}
+[47.814519] (-) TimerEvent: {}
+[47.915221] (-) TimerEvent: {}
+[48.016185] (-) TimerEvent: {}
+[48.116942] (-) TimerEvent: {}
+[48.217973] (-) TimerEvent: {}
+[48.319065] (-) TimerEvent: {}
+[48.398390] (amr_localization_cpp) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[48.419204] (-) TimerEvent: {}
+[48.519957] (-) TimerEvent: {}
+[48.620865] (-) TimerEvent: {}
+[48.721674] (-) TimerEvent: {}
+[48.822470] (-) TimerEvent: {}
+[48.914822] (amr_localization_cpp) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[48.922645] (-) TimerEvent: {}
+[49.023488] (-) TimerEvent: {}
+[49.124338] (-) TimerEvent: {}
+[49.225131] (-) TimerEvent: {}
+[49.326062] (-) TimerEvent: {}
+[49.426815] (-) TimerEvent: {}
+[49.527616] (-) TimerEvent: {}
+[49.628309] (-) TimerEvent: {}
+[49.729031] (-) TimerEvent: {}
+[49.829753] (-) TimerEvent: {}
+[49.930513] (-) TimerEvent: {}
+[49.997765] (amr_localization_cpp) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[50.030702] (-) TimerEvent: {}
+[50.131398] (-) TimerEvent: {}
+[50.232200] (-) TimerEvent: {}
+[50.332922] (-) TimerEvent: {}
+[50.433694] (-) TimerEvent: {}
+[50.534889] (-) TimerEvent: {}
+[50.635623] (-) TimerEvent: {}
+[50.729770] (amr_localization_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[50.735776] (-) TimerEvent: {}
+[50.836616] (-) TimerEvent: {}
+[50.854852] (amr_localization_cpp) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[50.936795] (-) TimerEvent: {}
+[50.980618] (amr_localization_cpp) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[51.036939] (-) TimerEvent: {}
+[51.121897] (amr_localization_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[51.137092] (-) TimerEvent: {}
+[51.237765] (-) TimerEvent: {}
+[51.329893] (amr_localization_cpp) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[51.338056] (-) TimerEvent: {}
+[51.438831] (-) TimerEvent: {}
+[51.539603] (-) TimerEvent: {}
+[51.640245] (-) TimerEvent: {}
+[51.740996] (-) TimerEvent: {}
+[51.841666] (-) TimerEvent: {}
+[51.942366] (-) TimerEvent: {}
+[52.040446] (amr_localization_cpp) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[52.042455] (-) TimerEvent: {}
+[52.107740] (amr_localization_cpp) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[52.142653] (-) TimerEvent: {}
+[52.243393] (-) TimerEvent: {}
+[52.344231] (-) TimerEvent: {}
+[52.445030] (-) TimerEvent: {}
+[52.545649] (-) TimerEvent: {}
+[52.646479] (-) TimerEvent: {}
+[52.747390] (-) TimerEvent: {}
+[52.848222] (-) TimerEvent: {}
+[52.948934] (-) TimerEvent: {}
+[53.049935] (-) TimerEvent: {}
+[53.150699] (-) TimerEvent: {}
+[53.251540] (-) TimerEvent: {}
+[53.352294] (-) TimerEvent: {}
+[53.453019] (-) TimerEvent: {}
+[53.553819] (-) TimerEvent: {}
+[53.654587] (-) TimerEvent: {}
+[53.755453] (-) TimerEvent: {}
+[53.856424] (-) TimerEvent: {}
+[53.957286] (-) TimerEvent: {}
+[54.057977] (-) TimerEvent: {}
+[54.158790] (-) TimerEvent: {}
+[54.259643] (-) TimerEvent: {}
+[54.360446] (-) TimerEvent: {}
+[54.461372] (-) TimerEvent: {}
+[54.562201] (-) TimerEvent: {}
+[54.663422] (-) TimerEvent: {}
+[54.705189] (amr_localization_cpp) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[54.763732] (-) TimerEvent: {}
+[54.865041] (-) TimerEvent: {}
+[54.966034] (-) TimerEvent: {}
+[55.057304] (amr_localization_cpp) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[55.066113] (-) TimerEvent: {}
+[55.166837] (-) TimerEvent: {}
+[55.267573] (-) TimerEvent: {}
+[55.368672] (-) TimerEvent: {}
+[55.469378] (-) TimerEvent: {}
+[55.516550] (amr_localization_cpp) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[55.569541] (-) TimerEvent: {}
+[55.670284] (-) TimerEvent: {}
+[55.771076] (-) TimerEvent: {}
+[55.871966] (-) TimerEvent: {}
+[55.878916] (amr_localization_cpp) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[55.972368] (-) TimerEvent: {}
+[56.073233] (-) TimerEvent: {}
+[56.173992] (-) TimerEvent: {}
+[56.274801] (-) TimerEvent: {}
+[56.375730] (-) TimerEvent: {}
+[56.476559] (-) TimerEvent: {}
+[56.577371] (-) TimerEvent: {}
+[56.678186] (-) TimerEvent: {}
+[56.779118] (-) TimerEvent: {}
+[56.879875] (-) TimerEvent: {}
+[56.980697] (-) TimerEvent: {}
+[57.081827] (-) TimerEvent: {}
+[57.182749] (-) TimerEvent: {}
+[57.283628] (-) TimerEvent: {}
+[57.384400] (-) TimerEvent: {}
+[57.485138] (-) TimerEvent: {}
+[57.586044] (-) TimerEvent: {}
+[57.686811] (-) TimerEvent: {}
+[57.787479] (-) TimerEvent: {}
+[57.888261] (-) TimerEvent: {}
+[57.989048] (-) TimerEvent: {}
+[58.090212] (-) TimerEvent: {}
+[58.191114] (-) TimerEvent: {}
+[58.291857] (-) TimerEvent: {}
+[58.368026] (amr_localization_cpp) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[58.388154] (amr_localization_cpp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[58.392003] (-) TimerEvent: {}
+[58.492796] (-) TimerEvent: {}
+[58.593626] (-) TimerEvent: {}
+[58.694479] (-) TimerEvent: {}
+[58.795379] (-) TimerEvent: {}
+[58.896112] (-) TimerEvent: {}
+[58.996945] (-) TimerEvent: {}
+[59.097917] (-) TimerEvent: {}
+[59.198962] (-) TimerEvent: {}
+[59.299848] (-) TimerEvent: {}
+[59.400665] (-) TimerEvent: {}
+[59.501364] (-) TimerEvent: {}
+[59.602096] (-) TimerEvent: {}
+[59.703325] (-) TimerEvent: {}
+[59.804164] (-) TimerEvent: {}
+[59.904937] (-) TimerEvent: {}
+[60.005759] (-) TimerEvent: {}
+[60.106687] (-) TimerEvent: {}
+[60.207748] (-) TimerEvent: {}
+[60.308831] (-) TimerEvent: {}
+[60.409616] (-) TimerEvent: {}
+[60.510422] (-) TimerEvent: {}
+[60.611187] (-) TimerEvent: {}
+[60.711924] (-) TimerEvent: {}
+[60.736592] (amr_localization_cpp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[60.754013] (amr_localization_cpp) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[60.812071] (-) TimerEvent: {}
+[60.913362] (-) TimerEvent: {}
+[61.014278] (-) TimerEvent: {}
+[61.115018] (-) TimerEvent: {}
+[61.215796] (-) TimerEvent: {}
+[61.316759] (-) TimerEvent: {}
+[61.320604] (amr_localization_cpp) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[61.416916] (-) TimerEvent: {}
+[61.517673] (-) TimerEvent: {}
+[61.618572] (-) TimerEvent: {}
+[61.660988] (amr_localization_cpp) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[61.718758] (-) TimerEvent: {}
+[61.819707] (-) TimerEvent: {}
+[61.838192] (amr_localization_cpp) StdoutLine: {'line': b'-- Found amr_msgs: 1.0.0 (/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/cmake)\n'}
+[61.919863] (-) TimerEvent: {}
+[62.021310] (-) TimerEvent: {}
+[62.122288] (-) TimerEvent: {}
+[62.223268] (-) TimerEvent: {}
+[62.324210] (-) TimerEvent: {}
+[62.424992] (-) TimerEvent: {}
+[62.525788] (-) TimerEvent: {}
+[62.626604] (-) TimerEvent: {}
+[62.727371] (-) TimerEvent: {}
+[62.759515] (amr_localization_cpp) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[62.827531] (-) TimerEvent: {}
+[62.844396] (amr_localization_cpp) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[62.927861] (-) TimerEvent: {}
+[62.984147] (amr_localization_cpp) StdoutLine: {'line': b'-- Found Armadillo: /usr/include (found version "10.8.2") \n'}
+[63.028014] (-) TimerEvent: {}
+[63.119434] (amr_localization_cpp) StdoutLine: {'line': b'-- Found message_filters: 4.3.5 (/opt/ros/humble/share/message_filters/cmake)\n'}
+[63.128254] (-) TimerEvent: {}
+[63.188216] (amr_localization_cpp) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[63.228521] (-) TimerEvent: {}
+[63.329846] (-) TimerEvent: {}
+[63.395305] (amr_localization_cpp) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[63.397752] (amr_localization_cpp) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[63.398814] (amr_localization_cpp) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[63.430033] (-) TimerEvent: {}
+[63.530701] (-) TimerEvent: {}
+[63.631399] (-) TimerEvent: {}
+[63.732150] (-) TimerEvent: {}
+[63.833020] (-) TimerEvent: {}
+[63.933898] (-) TimerEvent: {}
+[64.035103] (-) TimerEvent: {}
+[64.135938] (-) TimerEvent: {}
+[64.236739] (-) TimerEvent: {}
+[64.337436] (-) TimerEvent: {}
+[64.428630] (amr_localization_cpp) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[64.437602] (-) TimerEvent: {}
+[64.538401] (-) TimerEvent: {}
+[64.639364] (-) TimerEvent: {}
+[64.740361] (-) TimerEvent: {}
+[64.841296] (-) TimerEvent: {}
+[64.942109] (-) TimerEvent: {}
+[65.043094] (-) TimerEvent: {}
+[65.144092] (-) TimerEvent: {}
+[65.245267] (-) TimerEvent: {}
+[65.346115] (-) TimerEvent: {}
+[65.446767] (-) TimerEvent: {}
+[65.547472] (-) TimerEvent: {}
+[65.648143] (-) TimerEvent: {}
+[65.749224] (-) TimerEvent: {}
+[65.850012] (-) TimerEvent: {}
+[65.951671] (-) TimerEvent: {}
+[66.052586] (-) TimerEvent: {}
+[66.088802] (amr_localization_cpp) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[66.090201] (amr_localization_cpp) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[66.091387] (amr_localization_cpp) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[66.152754] (-) TimerEvent: {}
+[66.253582] (-) TimerEvent: {}
+[66.271277] (amr_localization_cpp) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[66.353778] (-) TimerEvent: {}
+[66.454656] (-) TimerEvent: {}
+[66.555606] (-) TimerEvent: {}
+[66.656674] (-) TimerEvent: {}
+[66.757455] (-) TimerEvent: {}
+[66.767614] (amr_localization_cpp) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[66.769111] (amr_localization_cpp) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[66.840941] (amr_localization_cpp) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[66.857654] (-) TimerEvent: {}
+[66.958547] (-) TimerEvent: {}
+[67.042100] (amr_localization_cpp) StdoutLine: {'line': b'-- Configuring done\n'}
+[67.058745] (-) TimerEvent: {}
+[67.159520] (-) TimerEvent: {}
+[67.260567] (-) TimerEvent: {}
+[67.361623] (-) TimerEvent: {}
+[67.462493] (-) TimerEvent: {}
+[67.499580] (amr_localization_cpp) StdoutLine: {'line': b'-- Generating done\n'}
+[67.562663] (-) TimerEvent: {}
+[67.663445] (-) TimerEvent: {}
+[67.692707] (amr_localization_cpp) StdoutLine: {'line': b'-- Build files have been written to: /workspaces/sim_ws/src/build/amr_localization_cpp\n'}
+[67.706931] (amr_localization_cpp) CommandEnded: {'returncode': 0}
+[67.712690] (amr_localization_cpp) JobProgress: {'identifier': 'amr_localization_cpp', 'progress': 'build'}
+[67.721543] (amr_localization_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/workspaces/sim_ws/src/build/amr_localization_cpp', '--', '-j8', '-l8'], 'cwd': '/workspaces/sim_ws/src/build/amr_localization_cpp', 'env': OrderedDict([('HOSTNAME', 'humble'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/sim_ws/src/install/amr_msgs/lib:/workspaces/sim_ws/install/amr_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/helpers/browser.sh'), ('HOME', '/home/ros'), ('OLDPWD', '/workspaces/sim_ws'), ('TERM_PROGRAM_VERSION', '1.99.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-041a9283-536e-4de1-bc30-1f33b4901c5f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-b7fb7ebb-8de1-407b-81e1-3ba823c3e73f.sock'), ('COLCON_PREFIX_PATH', '/workspaces/sim_ws/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d3e0f4ad-d6e0-41e5-9651-6f18d8312593.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/ros/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-4a8da02f30.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/workspaces/sim_ws/src/install/amr_msgs:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/sim_ws/src/build/amr_localization_cpp'), ('LC_ALL', 'C.UTF-8'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages:/workspaces/sim_ws/build/amr_simulation:/workspaces/sim_ws/install/amr_simulation/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_planning:/workspaces/sim_ws/install/amr_planning/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_control:/workspaces/sim_ws/install/amr_control/lib/python3.10/site-packages:/workspaces/sim_ws/install/amr_msgs/local/lib/python3.10/dist-packages:/workspaces/sim_ws/build/amr_bringup:/workspaces/sim_ws/install/amr_bringup/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/sim_ws/src/install/amr_msgs:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble')]), 'shell': False}
+[67.763679] (-) TimerEvent: {}
+[67.864672] (-) TimerEvent: {}
+[67.965530] (-) TimerEvent: {}
+[68.066514] (-) TimerEvent: {}
+[68.167467] (-) TimerEvent: {}
+[68.268477] (-) TimerEvent: {}
+[68.369503] (-) TimerEvent: {}
+[68.470392] (-) TimerEvent: {}
+[68.571401] (-) TimerEvent: {}
+[68.672427] (-) TimerEvent: {}
+[68.770601] (amr_localization_cpp) CommandEnded: {'returncode': 0}
+[68.772983] (-) TimerEvent: {}
+[68.793743] (amr_localization_cpp) JobProgress: {'identifier': 'amr_localization_cpp', 'progress': 'install'}
+[68.805199] (amr_localization_cpp) Command: {'cmd': ['/usr/bin/cmake', '--install', '/workspaces/sim_ws/src/build/amr_localization_cpp'], 'cwd': '/workspaces/sim_ws/src/build/amr_localization_cpp', 'env': OrderedDict([('HOSTNAME', 'humble'), ('GIT_ASKPASS', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/workspaces/sim_ws/src/install/amr_msgs/lib:/workspaces/sim_ws/install/amr_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/helpers/browser.sh'), ('HOME', '/home/ros'), ('OLDPWD', '/workspaces/sim_ws'), ('TERM_PROGRAM_VERSION', '1.99.0'), ('VSCODE_IPC_HOOK_CLI', '/tmp/vscode-ipc-041a9283-536e-4de1-bc30-1f33b4901c5f.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/node'), ('COLORTERM', 'truecolor'), ('REMOTE_CONTAINERS', 'true'), ('WAYLAND_DISPLAY', 'vscode-wayland-b7fb7ebb-8de1-407b-81e1-3ba823c3e73f.sock'), ('COLCON_PREFIX_PATH', '/workspaces/sim_ws/install'), ('ROS_DISTRO', 'humble'), ('REMOTE_CONTAINERS_IPC', '/tmp/vscode-remote-containers-ipc-d3e0f4ad-d6e0-41e5-9651-6f18d8312593.sock'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/vscode/vscode-server/bin/linux-x64/4437686ffebaf200fa4a6e6e67f735f3edf24ada/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/home/ros/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand'), ('XDG_RUNTIME_DIR', '/tmp/user/1000'), ('REMOTE_CONTAINERS_SOCKETS', '["/tmp/.X11-unix/X0","/home/ros/.gnupg/S.gpg-agent"]'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/tmp/user/1000/vscode-git-4a8da02f30.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/workspaces/sim_ws/src/install/amr_msgs:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble'), ('REMOTE_CONTAINERS_DISPLAY_SOCK', '/tmp/.X11-unix/X0'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/workspaces/sim_ws/src/build/amr_localization_cpp'), ('LC_ALL', 'C.UTF-8'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages:/workspaces/sim_ws/build/amr_simulation:/workspaces/sim_ws/install/amr_simulation/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_planning:/workspaces/sim_ws/install/amr_planning/lib/python3.10/site-packages:/workspaces/sim_ws/build/amr_control:/workspaces/sim_ws/install/amr_control/lib/python3.10/site-packages:/workspaces/sim_ws/install/amr_msgs/local/lib/python3.10/dist-packages:/workspaces/sim_ws/build/amr_bringup:/workspaces/sim_ws/install/amr_bringup/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/workspaces/sim_ws/src/install/amr_msgs:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble')]), 'shell': False}
+[68.873205] (-) TimerEvent: {}
+[68.973999] (-) TimerEvent: {}
+[69.000574] (amr_localization_cpp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[69.012301] (amr_localization_cpp) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[69.047005] (amr_localization_cpp) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_localization_cpp/share/ament_index/resource_index/package_run_dependencies/amr_localization_cpp\n'}
+[69.074193] (-) TimerEvent: {}
+[69.175035] (-) TimerEvent: {}
+[69.276137] (-) TimerEvent: {}
+[69.280467] (amr_localization_cpp) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_localization_cpp/share/ament_index/resource_index/parent_prefix_path/amr_localization_cpp\n'}
+[69.376156] (-) TimerEvent: {}
+[69.476963] (-) TimerEvent: {}
+[69.511004] (amr_localization_cpp) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/environment/ament_prefix_path.sh\n'}
+[69.577135] (-) TimerEvent: {}
+[69.677807] (-) TimerEvent: {}
+[69.726443] (amr_localization_cpp) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/environment/ament_prefix_path.dsv\n'}
+[69.777952] (-) TimerEvent: {}
+[69.878618] (-) TimerEvent: {}
+[69.933444] (amr_localization_cpp) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/environment/path.sh\n'}
+[69.978807] (-) TimerEvent: {}
+[70.079572] (-) TimerEvent: {}
+[70.135538] (amr_localization_cpp) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/environment/path.dsv\n'}
+[70.179789] (-) TimerEvent: {}
+[70.280641] (-) TimerEvent: {}
+[70.376696] (amr_localization_cpp) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/local_setup.bash\n'}
+[70.380852] (-) TimerEvent: {}
+[70.481648] (-) TimerEvent: {}
+[70.574409] (amr_localization_cpp) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/local_setup.sh\n'}
+[70.581790] (-) TimerEvent: {}
+[70.682611] (-) TimerEvent: {}
+[70.766146] (amr_localization_cpp) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/local_setup.zsh\n'}
+[70.782812] (-) TimerEvent: {}
+[70.883476] (-) TimerEvent: {}
+[70.952843] (amr_localization_cpp) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/local_setup.dsv\n'}
+[70.983656] (-) TimerEvent: {}
+[71.084414] (-) TimerEvent: {}
+[71.129122] (amr_localization_cpp) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/package.dsv\n'}
+[71.184574] (-) TimerEvent: {}
+[71.285329] (-) TimerEvent: {}
+[71.325175] (amr_localization_cpp) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_localization_cpp/share/ament_index/resource_index/packages/amr_localization_cpp\n'}
+[71.385493] (-) TimerEvent: {}
+[71.486294] (-) TimerEvent: {}
+[71.519236] (amr_localization_cpp) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/cmake/amr_localization_cppConfig.cmake\n'}
+[71.586451] (-) TimerEvent: {}
+[71.687092] (-) TimerEvent: {}
+[71.697297] (amr_localization_cpp) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/cmake/amr_localization_cppConfig-version.cmake\n'}
+[71.787243] (-) TimerEvent: {}
+[71.878146] (amr_localization_cpp) StdoutLine: {'line': b'-- Symlinking: /workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/package.xml\n'}
+[71.887436] (-) TimerEvent: {}
+[71.988247] (-) TimerEvent: {}
+[72.058539] (amr_localization_cpp) CommandEnded: {'returncode': 0}
+[72.088424] (-) TimerEvent: {}
+[72.192828] (-) TimerEvent: {}
+[72.293603] (-) TimerEvent: {}
+[72.394299] (-) TimerEvent: {}
+[72.495487] (-) TimerEvent: {}
+[72.596317] (-) TimerEvent: {}
+[72.696964] (-) TimerEvent: {}
+[72.797620] (-) TimerEvent: {}
+[72.824082] (amr_localization_cpp) JobEnded: {'identifier': 'amr_localization_cpp', 'rc': 0}
+[72.836007] (-) EventReactorShutdown: {}

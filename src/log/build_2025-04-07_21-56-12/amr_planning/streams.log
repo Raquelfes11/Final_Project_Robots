@@ -1,0 +1,24 @@
+[2.750s] Invoking command in '/workspaces/sim_ws/src/build/amr_planning': PYTHONPATH=/workspaces/sim_ws/src/build/amr_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/sim_ws/src/install/amr_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/sim_ws/src/build/amr_planning/build --no-deps symlink_data
+[3.951s] running develop
+[4.259s] running egg_info
+[4.261s] creating amr_planning.egg-info
+[4.263s] writing amr_planning.egg-info/PKG-INFO
+[4.272s] writing dependency_links to amr_planning.egg-info/dependency_links.txt
+[4.277s] writing entry points to amr_planning.egg-info/entry_points.txt
+[4.282s] writing requirements to amr_planning.egg-info/requires.txt
+[4.286s] writing top-level names to amr_planning.egg-info/top_level.txt
+[4.293s] writing manifest file 'amr_planning.egg-info/SOURCES.txt'
+[4.361s] reading manifest file 'amr_planning.egg-info/SOURCES.txt'
+[4.433s] writing manifest file 'amr_planning.egg-info/SOURCES.txt'
+[4.450s] running build_ext
+[4.453s] Creating /workspaces/sim_ws/src/install/amr_planning/lib/python3.10/site-packages/amr-planning.egg-link (link to .)
+[4.477s] Installing probabilistic_roadmap script to /workspaces/sim_ws/src/install/amr_planning/lib/amr_planning
+[4.502s] 
+[4.504s] Installed /workspaces/sim_ws/src/build/amr_planning
+[4.508s] running symlink_data
+[4.518s] creating /workspaces/sim_ws/src/install/amr_planning/share/ament_index
+[4.521s] creating /workspaces/sim_ws/src/install/amr_planning/share/ament_index/resource_index
+[4.526s] creating /workspaces/sim_ws/src/install/amr_planning/share/ament_index/resource_index/packages
+[4.547s] symbolically linking /workspaces/sim_ws/src/build/amr_planning/resource/amr_planning -> /workspaces/sim_ws/src/install/amr_planning/share/ament_index/resource_index/packages
+[4.569s] symbolically linking /workspaces/sim_ws/src/build/amr_planning/package.xml -> /workspaces/sim_ws/src/install/amr_planning/share/amr_planning
+[4.634s] Invoked command in '/workspaces/sim_ws/src/build/amr_planning' returned '0': PYTHONPATH=/workspaces/sim_ws/src/build/amr_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/sim_ws/src/install/amr_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/sim_ws/src/build/amr_planning/build --no-deps symlink_data

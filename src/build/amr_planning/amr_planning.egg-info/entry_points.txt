@@ -1,0 +1,3 @@
+[console_scripts]
+probabilistic_roadmap = amr_planning.prm_node:main
+

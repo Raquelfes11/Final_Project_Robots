@@ -1,0 +1,477 @@
+[0.154s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.155s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f05433e0f10>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f05433e0a00>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f05433e0a00>>, mixin_verb=('build',))
+[0.337s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.338s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.339s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.340s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspaces/sim_ws/src'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.369s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.370s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.376s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.377s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.378s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(amr_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.383s] Level 1:colcon.colcon_core.package_identification:_identify(amr_bringup) by extension 'ignore'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(amr_bringup) by extension 'ignore_ament_install'
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(amr_bringup) by extensions ['colcon_pkg']
+[0.389s] Level 1:colcon.colcon_core.package_identification:_identify(amr_bringup) by extension 'colcon_pkg'
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(amr_bringup) by extensions ['colcon_meta']
+[0.390s] Level 1:colcon.colcon_core.package_identification:_identify(amr_bringup) by extension 'colcon_meta'
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(amr_bringup) by extensions ['ros']
+[0.391s] Level 1:colcon.colcon_core.package_identification:_identify(amr_bringup) by extension 'ros'
+[0.404s] DEBUG:colcon.colcon_core.package_identification:Package 'amr_bringup' with type 'ros.ament_python' and name 'amr_bringup'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(amr_control) by extensions ['ignore', 'ignore_ament_install']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(amr_control) by extension 'ignore'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(amr_control) by extension 'ignore_ament_install'
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(amr_control) by extensions ['colcon_pkg']
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(amr_control) by extension 'colcon_pkg'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(amr_control) by extensions ['colcon_meta']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(amr_control) by extension 'colcon_meta'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(amr_control) by extensions ['ros']
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(amr_control) by extension 'ros'
+[0.422s] DEBUG:colcon.colcon_core.package_identification:Package 'amr_control' with type 'ros.ament_python' and name 'amr_control'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization) by extensions ['ignore', 'ignore_ament_install']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization) by extension 'ignore'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization) by extension 'ignore_ament_install'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization) by extensions ['colcon_pkg']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization) by extension 'colcon_pkg'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization) by extensions ['colcon_meta']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization) by extension 'colcon_meta'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization) by extensions ['ros']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization) by extension 'ros'
+[0.440s] DEBUG:colcon.colcon_core.package_identification:Package 'amr_localization' with type 'ros.ament_python' and name 'amr_localization'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization_cpp) by extension 'ignore'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization_cpp) by extension 'ignore_ament_install'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization_cpp) by extensions ['colcon_pkg']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization_cpp) by extension 'colcon_pkg'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization_cpp) by extensions ['colcon_meta']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization_cpp) by extension 'colcon_meta'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization_cpp) by extensions ['ros']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(amr_localization_cpp) by extension 'ros'
+[0.459s] DEBUG:colcon.colcon_core.package_identification:Package 'amr_localization_cpp' with type 'ros.ament_cmake' and name 'amr_localization_cpp'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(amr_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(amr_msgs) by extension 'ignore'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(amr_msgs) by extension 'ignore_ament_install'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(amr_msgs) by extensions ['colcon_pkg']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(amr_msgs) by extension 'colcon_pkg'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(amr_msgs) by extensions ['colcon_meta']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(amr_msgs) by extension 'colcon_meta'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(amr_msgs) by extensions ['ros']
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(amr_msgs) by extension 'ros'
+[0.477s] DEBUG:colcon.colcon_core.package_identification:Package 'amr_msgs' with type 'ros.ament_cmake' and name 'amr_msgs'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(amr_planning) by extensions ['ignore', 'ignore_ament_install']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(amr_planning) by extension 'ignore'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(amr_planning) by extension 'ignore_ament_install'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(amr_planning) by extensions ['colcon_pkg']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(amr_planning) by extension 'colcon_pkg'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(amr_planning) by extensions ['colcon_meta']
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(amr_planning) by extension 'colcon_meta'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(amr_planning) by extensions ['ros']
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(amr_planning) by extension 'ros'
+[0.493s] DEBUG:colcon.colcon_core.package_identification:Package 'amr_planning' with type 'ros.ament_python' and name 'amr_planning'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(amr_simulation) by extensions ['ignore', 'ignore_ament_install']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(amr_simulation) by extension 'ignore'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(amr_simulation) by extension 'ignore_ament_install'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(amr_simulation) by extensions ['colcon_pkg']
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(amr_simulation) by extension 'colcon_pkg'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(amr_simulation) by extensions ['colcon_meta']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(amr_simulation) by extension 'colcon_meta'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(amr_simulation) by extensions ['ros']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(amr_simulation) by extension 'ros'
+[0.514s] DEBUG:colcon.colcon_core.package_identification:Package 'amr_simulation' with type 'ros.ament_python' and name 'amr_simulation'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.534s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.534s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.534s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.535s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.535s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'amr_bringup' build argument 'cmake_args' from command line to 'None'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'amr_bringup' build argument 'cmake_target' from command line to 'None'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'amr_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.623s] Level 5:colcon.colcon_core.verb:set package 'amr_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.623s] Level 5:colcon.colcon_core.verb:set package 'amr_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.623s] Level 5:colcon.colcon_core.verb:set package 'amr_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.623s] Level 5:colcon.colcon_core.verb:set package 'amr_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.623s] Level 5:colcon.colcon_core.verb:set package 'amr_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'amr_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.624s] DEBUG:colcon.colcon_core.verb:Building package 'amr_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/sim_ws/src/build/amr_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/sim_ws/src/install/amr_bringup', 'merge_install': False, 'path': '/workspaces/sim_ws/src/amr_bringup', 'symlink_install': True, 'test_result_base': None}
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'amr_msgs' build argument 'cmake_args' from command line to 'None'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'amr_msgs' build argument 'cmake_target' from command line to 'None'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'amr_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'amr_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.626s] Level 5:colcon.colcon_core.verb:set package 'amr_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.626s] Level 5:colcon.colcon_core.verb:set package 'amr_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.626s] Level 5:colcon.colcon_core.verb:set package 'amr_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.626s] Level 5:colcon.colcon_core.verb:set package 'amr_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.627s] Level 5:colcon.colcon_core.verb:set package 'amr_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.627s] DEBUG:colcon.colcon_core.verb:Building package 'amr_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/sim_ws/src/build/amr_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/sim_ws/src/install/amr_msgs', 'merge_install': False, 'path': '/workspaces/sim_ws/src/amr_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'amr_planning' build argument 'cmake_args' from command line to 'None'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'amr_planning' build argument 'cmake_target' from command line to 'None'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'amr_planning' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.629s] Level 5:colcon.colcon_core.verb:set package 'amr_planning' build argument 'cmake_clean_cache' from command line to 'False'
+[0.629s] Level 5:colcon.colcon_core.verb:set package 'amr_planning' build argument 'cmake_clean_first' from command line to 'False'
+[0.629s] Level 5:colcon.colcon_core.verb:set package 'amr_planning' build argument 'cmake_force_configure' from command line to 'False'
+[0.629s] Level 5:colcon.colcon_core.verb:set package 'amr_planning' build argument 'ament_cmake_args' from command line to 'None'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'amr_planning' build argument 'catkin_cmake_args' from command line to 'None'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'amr_planning' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.630s] DEBUG:colcon.colcon_core.verb:Building package 'amr_planning' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/sim_ws/src/build/amr_planning', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/sim_ws/src/install/amr_planning', 'merge_install': False, 'path': '/workspaces/sim_ws/src/amr_planning', 'symlink_install': True, 'test_result_base': None}
+[0.631s] Level 5:colcon.colcon_core.verb:set package 'amr_control' build argument 'cmake_args' from command line to 'None'
+[0.631s] Level 5:colcon.colcon_core.verb:set package 'amr_control' build argument 'cmake_target' from command line to 'None'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'amr_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'amr_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'amr_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'amr_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'amr_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.633s] Level 5:colcon.colcon_core.verb:set package 'amr_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.633s] Level 5:colcon.colcon_core.verb:set package 'amr_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.633s] DEBUG:colcon.colcon_core.verb:Building package 'amr_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/sim_ws/src/build/amr_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/sim_ws/src/install/amr_control', 'merge_install': False, 'path': '/workspaces/sim_ws/src/amr_control', 'symlink_install': True, 'test_result_base': None}
+[0.634s] Level 5:colcon.colcon_core.verb:set package 'amr_localization' build argument 'cmake_args' from command line to 'None'
+[0.634s] Level 5:colcon.colcon_core.verb:set package 'amr_localization' build argument 'cmake_target' from command line to 'None'
+[0.634s] Level 5:colcon.colcon_core.verb:set package 'amr_localization' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.635s] Level 5:colcon.colcon_core.verb:set package 'amr_localization' build argument 'cmake_clean_cache' from command line to 'False'
+[0.635s] Level 5:colcon.colcon_core.verb:set package 'amr_localization' build argument 'cmake_clean_first' from command line to 'False'
+[0.636s] Level 5:colcon.colcon_core.verb:set package 'amr_localization' build argument 'cmake_force_configure' from command line to 'False'
+[0.636s] Level 5:colcon.colcon_core.verb:set package 'amr_localization' build argument 'ament_cmake_args' from command line to 'None'
+[0.636s] Level 5:colcon.colcon_core.verb:set package 'amr_localization' build argument 'catkin_cmake_args' from command line to 'None'
+[0.636s] Level 5:colcon.colcon_core.verb:set package 'amr_localization' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.637s] DEBUG:colcon.colcon_core.verb:Building package 'amr_localization' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/sim_ws/src/build/amr_localization', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/sim_ws/src/install/amr_localization', 'merge_install': False, 'path': '/workspaces/sim_ws/src/amr_localization', 'symlink_install': True, 'test_result_base': None}
+[0.638s] Level 5:colcon.colcon_core.verb:set package 'amr_localization_cpp' build argument 'cmake_args' from command line to 'None'
+[0.638s] Level 5:colcon.colcon_core.verb:set package 'amr_localization_cpp' build argument 'cmake_target' from command line to 'None'
+[0.639s] Level 5:colcon.colcon_core.verb:set package 'amr_localization_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.639s] Level 5:colcon.colcon_core.verb:set package 'amr_localization_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.639s] Level 5:colcon.colcon_core.verb:set package 'amr_localization_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.639s] Level 5:colcon.colcon_core.verb:set package 'amr_localization_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.640s] Level 5:colcon.colcon_core.verb:set package 'amr_localization_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.640s] Level 5:colcon.colcon_core.verb:set package 'amr_localization_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.640s] Level 5:colcon.colcon_core.verb:set package 'amr_localization_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.640s] DEBUG:colcon.colcon_core.verb:Building package 'amr_localization_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/sim_ws/src/build/amr_localization_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/sim_ws/src/install/amr_localization_cpp', 'merge_install': False, 'path': '/workspaces/sim_ws/src/amr_localization_cpp', 'symlink_install': True, 'test_result_base': None}
+[0.641s] Level 5:colcon.colcon_core.verb:set package 'amr_simulation' build argument 'cmake_args' from command line to 'None'
+[0.641s] Level 5:colcon.colcon_core.verb:set package 'amr_simulation' build argument 'cmake_target' from command line to 'None'
+[0.641s] Level 5:colcon.colcon_core.verb:set package 'amr_simulation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'amr_simulation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'amr_simulation' build argument 'cmake_clean_first' from command line to 'False'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'amr_simulation' build argument 'cmake_force_configure' from command line to 'False'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'amr_simulation' build argument 'ament_cmake_args' from command line to 'None'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'amr_simulation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'amr_simulation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.643s] DEBUG:colcon.colcon_core.verb:Building package 'amr_simulation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspaces/sim_ws/src/build/amr_simulation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspaces/sim_ws/src/install/amr_simulation', 'merge_install': False, 'path': '/workspaces/sim_ws/src/amr_simulation', 'symlink_install': True, 'test_result_base': None}
+[0.643s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.645s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.646s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/sim_ws/src/amr_msgs' with build type 'ament_cmake'
+[0.646s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/sim_ws/src/amr_msgs'
+[0.658s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.659s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.659s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.686s] WARNING:colcon.colcon_core.prefix_path.colcon:The path '/workspaces/sim_ws/install' in the environment variable COLCON_PREFIX_PATH doesn't exist
+[0.687s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/workspaces/sim_ws/install/amr_simulation' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.688s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/workspaces/sim_ws/install/amr_planning' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.689s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/workspaces/sim_ws/install/amr_localization' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.690s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/workspaces/sim_ws/install/amr_control' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.691s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/workspaces/sim_ws/install/amr_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.692s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/workspaces/sim_ws/install/amr_bringup' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.694s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/workspaces/sim_ws/install/amr_localization' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.695s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/workspaces/sim_ws/install/amr_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.724s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/workspaces/sim_ws/src/amr_bringup' with build type 'ament_python'
+[0.725s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_bringup', 'ament_prefix_path')
+[0.726s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_bringup/share/amr_bringup/hook/ament_prefix_path.ps1'
+[0.757s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/install/amr_bringup/share/amr_bringup/hook/ament_prefix_path.dsv'
+[0.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_bringup/share/amr_bringup/hook/ament_prefix_path.sh'
+[0.792s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.792s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.804s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/workspaces/sim_ws/src/amr_planning' with build type 'ament_python'
+[0.805s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_planning', 'ament_prefix_path')
+[0.806s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_planning/share/amr_planning/hook/ament_prefix_path.ps1'
+[0.830s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/install/amr_planning/share/amr_planning/hook/ament_prefix_path.dsv'
+[0.845s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_planning/share/amr_planning/hook/ament_prefix_path.sh'
+[0.863s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.863s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.937s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/sim_ws/src/build/amr_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble /usr/bin/cmake /workspaces/sim_ws/src/amr_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/sim_ws/src/install/amr_msgs
+[1.311s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspaces/sim_ws/src/amr_bringup'
+[1.312s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.312s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.703s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspaces/sim_ws/src/amr_planning'
+[1.703s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.704s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.556s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/sim_ws/src/build/amr_planning': PYTHONPATH=/workspaces/sim_ws/src/build/amr_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/sim_ws/src/install/amr_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/sim_ws/src/build/amr_planning/build --no-deps symlink_data
+[3.668s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/sim_ws/src/build/amr_bringup': PYTHONPATH=/workspaces/sim_ws/src/build/amr_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/sim_ws/src/install/amr_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/sim_ws/src/build/amr_bringup/build --no-deps symlink_data
+[5.437s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_planning', 'pythonpath_develop')
+[5.438s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/build/amr_planning/share/amr_planning/hook/pythonpath_develop.ps1'
+[5.440s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/sim_ws/src/build/amr_planning' returned '0': PYTHONPATH=/workspaces/sim_ws/src/build/amr_planning/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/sim_ws/src/install/amr_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/sim_ws/src/build/amr_planning/build --no-deps symlink_data
+[5.458s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/build/amr_planning/share/amr_planning/hook/pythonpath_develop.dsv'
+[5.475s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/build/amr_planning/share/amr_planning/hook/pythonpath_develop.sh'
+[5.517s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_planning' for CMake module files
+[5.577s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_planning' for CMake config files
+[5.664s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_planning/lib'
+[5.671s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_planning/bin'
+[5.673s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_planning/lib/pkgconfig/amr_planning.pc'
+[5.675s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_planning/lib/python3.10/site-packages'
+[5.678s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_planning', 'pythonpath')
+[5.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_planning/share/amr_planning/hook/pythonpath.ps1'
+[5.701s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/install/amr_planning/share/amr_planning/hook/pythonpath.dsv'
+[5.717s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_planning/share/amr_planning/hook/pythonpath.sh'
+[5.733s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_planning/bin'
+[5.734s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_planning)
+[5.735s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_planning/share/amr_planning/package.ps1'
+[5.749s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/sim_ws/src/install/amr_planning/share/amr_planning/package.dsv'
+[5.766s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_planning/share/amr_planning/package.sh'
+[5.782s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_planning/share/amr_planning/package.bash'
+[5.802s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_planning/share/amr_planning/package.zsh'
+[5.820s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/sim_ws/src/install/amr_planning/share/colcon-core/packages/amr_planning)
+[5.835s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_bringup', 'pythonpath_develop')
+[5.836s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/build/amr_bringup/share/amr_bringup/hook/pythonpath_develop.ps1'
+[5.845s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/sim_ws/src/build/amr_bringup' returned '0': PYTHONPATH=/workspaces/sim_ws/src/build/amr_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/sim_ws/src/install/amr_bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/sim_ws/src/build/amr_bringup/build --no-deps symlink_data
+[5.856s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/build/amr_bringup/share/amr_bringup/hook/pythonpath_develop.dsv'
+[5.872s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/build/amr_bringup/share/amr_bringup/hook/pythonpath_develop.sh'
+[5.891s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_bringup' for CMake module files
+[5.956s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_bringup' for CMake config files
+[6.058s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_bringup/lib'
+[6.063s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_bringup/bin'
+[6.065s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_bringup/lib/pkgconfig/amr_bringup.pc'
+[6.067s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_bringup/lib/python3.10/site-packages'
+[6.071s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_bringup', 'pythonpath')
+[6.072s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_bringup/share/amr_bringup/hook/pythonpath.ps1'
+[6.087s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/install/amr_bringup/share/amr_bringup/hook/pythonpath.dsv'
+[6.107s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_bringup/share/amr_bringup/hook/pythonpath.sh'
+[6.124s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_bringup/bin'
+[6.126s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_bringup)
+[6.127s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_bringup/share/amr_bringup/package.ps1'
+[6.141s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/sim_ws/src/install/amr_bringup/share/amr_bringup/package.dsv'
+[6.158s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_bringup/share/amr_bringup/package.sh'
+[6.173s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_bringup/share/amr_bringup/package.bash'
+[6.187s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_bringup/share/amr_bringup/package.zsh'
+[6.208s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/sim_ws/src/install/amr_bringup/share/colcon-core/packages/amr_bringup)
+[16.143s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/sim_ws/src/build/amr_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble /usr/bin/cmake /workspaces/sim_ws/src/amr_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/sim_ws/src/install/amr_msgs
+[16.156s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/sim_ws/src/build/amr_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble /usr/bin/cmake --build /workspaces/sim_ws/src/build/amr_msgs -- -j8 -l8
+[23.803s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/sim_ws/src/build/amr_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble /usr/bin/cmake --build /workspaces/sim_ws/src/build/amr_msgs -- -j8 -l8
+[23.864s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/sim_ws/src/build/amr_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble /usr/bin/cmake --install /workspaces/sim_ws/src/build/amr_msgs
+[34.541s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_msgs)
+[34.542s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_msgs' for CMake module files
+[34.543s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/sim_ws/src/build/amr_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble /usr/bin/cmake --install /workspaces/sim_ws/src/build/amr_msgs
+[34.902s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_msgs' for CMake config files
+[35.338s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_msgs', 'cmake_prefix_path')
+[35.339s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/hook/cmake_prefix_path.ps1'
+[35.354s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/hook/cmake_prefix_path.dsv'
+[35.369s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/hook/cmake_prefix_path.sh'
+[35.392s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_msgs/lib'
+[35.396s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_msgs', 'ld_library_path_lib')
+[35.397s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/hook/ld_library_path_lib.ps1'
+[35.414s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/hook/ld_library_path_lib.dsv'
+[35.431s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/hook/ld_library_path_lib.sh'
+[35.448s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_msgs/bin'
+[35.450s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_msgs/lib/pkgconfig/amr_msgs.pc'
+[35.454s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_msgs/lib/python3.10/site-packages'
+[35.457s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_msgs/bin'
+[35.459s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/package.ps1'
+[35.476s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/package.dsv'
+[35.496s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/package.sh'
+[35.507s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/package.bash'
+[35.519s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/package.zsh'
+[35.534s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/sim_ws/src/install/amr_msgs/share/colcon-core/packages/amr_msgs)
+[35.568s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_msgs)
+[35.568s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_msgs' for CMake module files
+[35.858s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_msgs' for CMake config files
+[36.256s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_msgs', 'cmake_prefix_path')
+[36.256s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/hook/cmake_prefix_path.ps1'
+[36.274s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/hook/cmake_prefix_path.dsv'
+[36.292s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/hook/cmake_prefix_path.sh'
+[36.314s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_msgs/lib'
+[36.320s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_msgs', 'ld_library_path_lib')
+[36.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/hook/ld_library_path_lib.ps1'
+[36.338s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/hook/ld_library_path_lib.dsv'
+[36.360s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/hook/ld_library_path_lib.sh'
+[36.384s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_msgs/bin'
+[36.385s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_msgs/lib/pkgconfig/amr_msgs.pc'
+[36.387s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_msgs/lib/python3.10/site-packages'
+[36.390s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_msgs/bin'
+[36.393s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/package.ps1'
+[36.409s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/package.dsv'
+[36.423s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/package.sh'
+[36.439s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/package.bash'
+[36.456s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_msgs/share/amr_msgs/package.zsh'
+[36.474s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/sim_ws/src/install/amr_msgs/share/colcon-core/packages/amr_msgs)
+[36.486s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/workspaces/sim_ws/src/amr_control' with build type 'ament_python'
+[36.486s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_control', 'ament_prefix_path')
+[36.487s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_control/share/amr_control/hook/ament_prefix_path.ps1'
+[36.511s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/install/amr_control/share/amr_control/hook/ament_prefix_path.dsv'
+[36.528s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_control/share/amr_control/hook/ament_prefix_path.sh'
+[36.545s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[36.546s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[36.564s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/workspaces/sim_ws/src/amr_localization' with build type 'ament_python'
+[36.564s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_localization', 'ament_prefix_path')
+[36.565s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_localization/share/amr_localization/hook/ament_prefix_path.ps1'
+[36.593s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/install/amr_localization/share/amr_localization/hook/ament_prefix_path.dsv'
+[36.612s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_localization/share/amr_localization/hook/ament_prefix_path.sh'
+[36.634s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[36.635s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[36.650s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspaces/sim_ws/src/amr_localization_cpp' with build type 'ament_cmake'
+[36.651s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspaces/sim_ws/src/amr_localization_cpp'
+[36.653s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[36.653s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[36.670s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/workspaces/sim_ws/src/amr_simulation' with build type 'ament_python'
+[36.672s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_simulation', 'ament_prefix_path')
+[36.676s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_simulation/share/amr_simulation/hook/ament_prefix_path.ps1'
+[36.718s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/install/amr_simulation/share/amr_simulation/hook/ament_prefix_path.dsv'
+[36.754s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_simulation/share/amr_simulation/hook/ament_prefix_path.sh'
+[36.783s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[36.783s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[37.755s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspaces/sim_ws/src/amr_control'
+[37.755s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[37.756s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[38.657s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspaces/sim_ws/src/amr_localization'
+[38.657s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[38.658s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[38.756s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/sim_ws/src/build/amr_localization_cpp': AMENT_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/sim_ws/src/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/sim_ws/src/amr_localization_cpp -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/sim_ws/src/install/amr_localization_cpp
+[39.820s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspaces/sim_ws/src/amr_simulation'
+[39.821s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[39.821s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[42.877s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/sim_ws/src/build/amr_simulation': AMENT_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/workspaces/sim_ws/src/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/sim_ws/src/build/amr_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/sim_ws/src/install/amr_simulation/lib/python3.10/site-packages:/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/sim_ws/src/build/amr_simulation/build --no-deps symlink_data
+[42.961s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/sim_ws/src/build/amr_localization': AMENT_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/workspaces/sim_ws/src/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/sim_ws/src/build/amr_localization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/sim_ws/src/install/amr_localization/lib/python3.10/site-packages:/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/sim_ws/src/build/amr_localization/build --no-deps symlink_data
+[43.059s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/sim_ws/src/build/amr_control': AMENT_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/workspaces/sim_ws/src/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/sim_ws/src/build/amr_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/sim_ws/src/install/amr_control/lib/python3.10/site-packages:/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/sim_ws/src/build/amr_control/build --no-deps symlink_data
+[47.058s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_localization', 'pythonpath_develop')
+[47.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/build/amr_localization/share/amr_localization/hook/pythonpath_develop.ps1'
+[47.061s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/sim_ws/src/build/amr_localization' returned '0': AMENT_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/workspaces/sim_ws/src/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/sim_ws/src/build/amr_localization/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/sim_ws/src/install/amr_localization/lib/python3.10/site-packages:/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/sim_ws/src/build/amr_localization/build --no-deps symlink_data
+[47.098s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/build/amr_localization/share/amr_localization/hook/pythonpath_develop.dsv'
+[47.136s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/build/amr_localization/share/amr_localization/hook/pythonpath_develop.sh'
+[47.177s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_localization' for CMake module files
+[47.258s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_localization' for CMake config files
+[47.385s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_localization/lib'
+[47.393s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_localization/bin'
+[47.395s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_localization/lib/pkgconfig/amr_localization.pc'
+[47.398s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_localization/lib/python3.10/site-packages'
+[47.402s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_localization', 'pythonpath')
+[47.403s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_localization/share/amr_localization/hook/pythonpath.ps1'
+[47.424s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/install/amr_localization/share/amr_localization/hook/pythonpath.dsv'
+[47.445s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_localization/share/amr_localization/hook/pythonpath.sh'
+[47.467s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_localization/bin'
+[47.469s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_localization)
+[47.471s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_localization/share/amr_localization/package.ps1'
+[47.491s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/sim_ws/src/install/amr_localization/share/amr_localization/package.dsv'
+[47.507s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_localization/share/amr_localization/package.sh'
+[47.526s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_localization/share/amr_localization/package.bash'
+[47.545s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_localization/share/amr_localization/package.zsh'
+[47.564s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/sim_ws/src/install/amr_localization/share/colcon-core/packages/amr_localization)
+[47.587s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_simulation', 'pythonpath_develop')
+[47.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/build/amr_simulation/share/amr_simulation/hook/pythonpath_develop.ps1'
+[47.600s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/sim_ws/src/build/amr_simulation' returned '0': AMENT_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/workspaces/sim_ws/src/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/sim_ws/src/build/amr_simulation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/sim_ws/src/install/amr_simulation/lib/python3.10/site-packages:/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/sim_ws/src/build/amr_simulation/build --no-deps symlink_data
+[47.616s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/build/amr_simulation/share/amr_simulation/hook/pythonpath_develop.dsv'
+[47.640s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/build/amr_simulation/share/amr_simulation/hook/pythonpath_develop.sh'
+[47.668s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_simulation' for CMake module files
+[47.734s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_simulation' for CMake config files
+[47.838s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_simulation/lib'
+[47.845s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_simulation/bin'
+[47.847s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_simulation/lib/pkgconfig/amr_simulation.pc'
+[47.850s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_simulation/lib/python3.10/site-packages'
+[47.855s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_simulation', 'pythonpath')
+[47.856s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_simulation/share/amr_simulation/hook/pythonpath.ps1'
+[47.876s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/install/amr_simulation/share/amr_simulation/hook/pythonpath.dsv'
+[47.894s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_simulation/share/amr_simulation/hook/pythonpath.sh'
+[47.918s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_simulation/bin'
+[47.921s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_simulation)
+[47.921s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_simulation/share/amr_simulation/package.ps1'
+[47.941s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/sim_ws/src/install/amr_simulation/share/amr_simulation/package.dsv'
+[47.959s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_simulation/share/amr_simulation/package.sh'
+[47.978s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_simulation/share/amr_simulation/package.bash'
+[47.997s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_simulation/share/amr_simulation/package.zsh'
+[48.014s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/sim_ws/src/install/amr_simulation/share/colcon-core/packages/amr_simulation)
+[48.031s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_control', 'pythonpath_develop')
+[48.032s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/build/amr_control/share/amr_control/hook/pythonpath_develop.ps1'
+[48.048s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/sim_ws/src/build/amr_control' returned '0': AMENT_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/workspaces/sim_ws/src/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/sim_ws/src/build/amr_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspaces/sim_ws/src/install/amr_control/lib/python3.10/site-packages:/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /workspaces/sim_ws/src/build/amr_control/build --no-deps symlink_data
+[48.061s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/build/amr_control/share/amr_control/hook/pythonpath_develop.dsv'
+[48.082s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/build/amr_control/share/amr_control/hook/pythonpath_develop.sh'
+[48.102s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_control' for CMake module files
+[48.164s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_control' for CMake config files
+[48.266s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_control/lib'
+[48.272s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_control/bin'
+[48.274s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_control/lib/pkgconfig/amr_control.pc'
+[48.276s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_control/lib/python3.10/site-packages'
+[48.280s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_control', 'pythonpath')
+[48.280s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_control/share/amr_control/hook/pythonpath.ps1'
+[48.303s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/install/amr_control/share/amr_control/hook/pythonpath.dsv'
+[48.323s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_control/share/amr_control/hook/pythonpath.sh'
+[48.344s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_control/bin'
+[48.346s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_control)
+[48.346s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_control/share/amr_control/package.ps1'
+[48.362s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/sim_ws/src/install/amr_control/share/amr_control/package.dsv'
+[48.378s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_control/share/amr_control/package.sh'
+[48.395s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_control/share/amr_control/package.bash'
+[48.413s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_control/share/amr_control/package.zsh'
+[48.430s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/sim_ws/src/install/amr_control/share/colcon-core/packages/amr_control)
+[68.356s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/sim_ws/src/build/amr_localization_cpp' returned '0': AMENT_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/sim_ws/src/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /workspaces/sim_ws/src/amr_localization_cpp -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspaces/sim_ws/src/install/amr_localization_cpp
+[68.371s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/sim_ws/src/build/amr_localization_cpp': AMENT_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/sim_ws/src/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/sim_ws/src/build/amr_localization_cpp -- -j8 -l8
+[69.420s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/sim_ws/src/build/amr_localization_cpp' returned '0': AMENT_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/sim_ws/src/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /workspaces/sim_ws/src/build/amr_localization_cpp -- -j8 -l8
+[69.455s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspaces/sim_ws/src/build/amr_localization_cpp': AMENT_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/sim_ws/src/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/sim_ws/src/build/amr_localization_cpp
+[72.706s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_localization_cpp)
+[72.707s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_localization_cpp' for CMake module files
+[72.708s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspaces/sim_ws/src/build/amr_localization_cpp' returned '0': AMENT_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/workspaces/sim_ws/src/install/amr_msgs:/workspaces/sim_ws/install/amr_localization:/workspaces/sim_ws/install/amr_msgs:/workspaces/sim_ws/install/amr_simulation:/workspaces/sim_ws/install/amr_planning:/workspaces/sim_ws/install/amr_control:/workspaces/sim_ws/install/amr_bringup:/opt/ros/humble LD_LIBRARY_PATH=/workspaces/sim_ws/src/install/amr_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/workspaces/sim_ws/src/install/amr_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /workspaces/sim_ws/src/build/amr_localization_cpp
+[72.810s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_localization_cpp' for CMake config files
+[72.900s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_localization_cpp', 'cmake_prefix_path')
+[72.900s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/hook/cmake_prefix_path.ps1'
+[72.915s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/hook/cmake_prefix_path.dsv'
+[72.934s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/hook/cmake_prefix_path.sh'
+[72.956s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_localization_cpp/bin'
+[72.958s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_localization_cpp/lib/pkgconfig/amr_localization_cpp.pc'
+[72.961s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_localization_cpp/lib/python3.10/site-packages'
+[72.963s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_localization_cpp/bin'
+[72.964s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/package.ps1'
+[72.979s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/package.dsv'
+[72.998s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/package.sh'
+[73.013s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/package.bash'
+[73.027s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/package.zsh'
+[73.042s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/sim_ws/src/install/amr_localization_cpp/share/colcon-core/packages/amr_localization_cpp)
+[73.076s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_localization_cpp)
+[73.077s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_localization_cpp' for CMake module files
+[73.227s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_localization_cpp' for CMake config files
+[73.314s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_localization_cpp', 'cmake_prefix_path')
+[73.315s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/hook/cmake_prefix_path.ps1'
+[73.336s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/hook/cmake_prefix_path.dsv'
+[73.359s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/hook/cmake_prefix_path.sh'
+[73.383s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_localization_cpp/bin'
+[73.385s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_localization_cpp/lib/pkgconfig/amr_localization_cpp.pc'
+[73.387s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_localization_cpp/lib/python3.10/site-packages'
+[73.389s] Level 1:colcon.colcon_core.environment:checking '/workspaces/sim_ws/src/install/amr_localization_cpp/bin'
+[73.391s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/package.ps1'
+[73.405s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/package.dsv'
+[73.419s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/package.sh'
+[73.433s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/package.bash'
+[73.447s] INFO:colcon.colcon_core.shell:Creating package script '/workspaces/sim_ws/src/install/amr_localization_cpp/share/amr_localization_cpp/package.zsh'
+[73.460s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspaces/sim_ws/src/install/amr_localization_cpp/share/colcon-core/packages/amr_localization_cpp)
+[73.471s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[73.472s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[73.472s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[73.473s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[73.519s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[73.520s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[73.520s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[73.521s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[73.846s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[73.847s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[73.848s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/sim_ws/src/install/local_setup.ps1'
+[73.857s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/sim_ws/src/install/_local_setup_util_ps1.py'
+[73.866s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/sim_ws/src/install/setup.ps1'
+[73.877s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/sim_ws/src/install/local_setup.sh'
+[73.885s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspaces/sim_ws/src/install/_local_setup_util_sh.py'
+[73.893s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/sim_ws/src/install/setup.sh'
+[73.904s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/sim_ws/src/install/local_setup.bash'
+[73.912s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/sim_ws/src/install/setup.bash'
+[73.920s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspaces/sim_ws/src/install/local_setup.zsh'
+[73.927s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspaces/sim_ws/src/install/setup.zsh'
