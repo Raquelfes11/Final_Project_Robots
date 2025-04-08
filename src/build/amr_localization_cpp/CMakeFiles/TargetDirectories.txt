@@ -1,9 +1,0 @@
-/workspaces/sim_ws/src/build/amr_localization_cpp/CMakeFiles/uninstall.dir
-/workspaces/sim_ws/src/build/amr_localization_cpp/CMakeFiles/amr_localization_cpp_uninstall.dir
-/workspaces/sim_ws/src/build/amr_localization_cpp/CMakeFiles/test.dir
-/workspaces/sim_ws/src/build/amr_localization_cpp/CMakeFiles/edit_cache.dir
-/workspaces/sim_ws/src/build/amr_localization_cpp/CMakeFiles/rebuild_cache.dir
-/workspaces/sim_ws/src/build/amr_localization_cpp/CMakeFiles/list_install_components.dir
-/workspaces/sim_ws/src/build/amr_localization_cpp/CMakeFiles/install.dir
-/workspaces/sim_ws/src/build/amr_localization_cpp/CMakeFiles/install/local.dir
-/workspaces/sim_ws/src/build/amr_localization_cpp/CMakeFiles/install/strip.dir

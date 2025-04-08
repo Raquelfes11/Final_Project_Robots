@@ -1,6 +1,0 @@
-{
-  "package_name": "amr_msgs",
-  "non_idl_tuples": [
-    "/workspaces/sim_ws/src/amr_msgs:msg/PoseStamped.msg"
-  ]
-}

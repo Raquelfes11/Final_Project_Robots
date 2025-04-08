@@ -1,5 +1,3 @@
-#include "amr_localization/map.hpp"
-
 // C++ built-in libraries
 #include <mlpack/methods/dbscan/dbscan.hpp>
 #include <armadillo>
@@ -12,6 +10,9 @@
 
 // Third-party libraries
 #include <Eigen/Dense> // Allows using Eigen matrices
+
+#include "amr_localization_cpp/maps.hpp"
+#include "amr_localization_cpp/particle_filter.hpp"  // A source file (.cpp) must always include its own header
 
 class ParticleFilter
 {
@@ -344,7 +345,7 @@ private:
     double _sigma_z;
     int _iteration;
 
-    std::shared_ptr<Map> _map;
+    Map _map;
     std::vector<std::tuple<double, double, double> _particles;
 
 }

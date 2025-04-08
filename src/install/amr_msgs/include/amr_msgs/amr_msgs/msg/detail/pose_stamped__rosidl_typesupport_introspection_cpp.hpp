@@ -1,1 +1,0 @@
-/workspaces/sim_ws/src/build/amr_msgs/rosidl_typesupport_introspection_cpp/amr_msgs/msg/detail/pose_stamped__rosidl_typesupport_introspection_cpp.hpp

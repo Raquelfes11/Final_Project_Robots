@@ -2,6 +2,8 @@
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_lifecycle/lifecycle_node.hpp"
 #include <cmath>
+#include <tuple>
+#include <memory>
 
 #include "message_filters/synchronizer.h"
 #include "message_filters/sync_policies/approximate_time.h"
@@ -11,7 +13,9 @@
 #include "sensor_msgs/msg/laser_scan.hpp"
 
 #include <tf2/LinearMath/Quaternion.h>
-#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
+#include <tf2_geometry_msgs/tf2_geometry_msgs.hpp>
+
+#include "amr_localization_cpp/particle_filter.hpp"
 
 using namespace std::chrono_literals;
 
@@ -28,8 +32,8 @@ public:
         this->declare_parameter("dt", 0.05);
         this->declare_parameter("enable_plot", false);
         this->declare_parameter("global_localization", true);
-        this->declare_parameter("initial_pose", std::make_tuple(0.0, 0.0, degrees_to_radians(0)));  // (x, y, theta)
-        this->declare_parameter("initial_pose_sigma", std::make_tuple(0.05, 0.05, 0.1));  // (sigma_x, sigma_y, sigma_theta)
+        this->declare_parameter<std::vector<double>>("initial_pose", {0.0, 0.0, degrees_to_radians(0)});  // (x, y, theta)
+        this->declare_parameter<std::vector<double>>("initial_pose_sigma", {0.05, 0.05, 0.1});  // (sigma_x, sigma_y, sigma_theta)
         this->declare_parameter("particles", 1000);
         this->declare_parameter("sigma_v", 0.1);
         this->declare_parameter("sigma_w", 0.1);
@@ -58,8 +62,8 @@ public:
         double dt;
         bool enable_plot;
         bool global_localization;
-        std::tuple<double, double, double> initial_pose;
-        std::tuple<double, double, double> initial_pose_sigma;
+        std::vector<double> initial_pose;
+        std::vector<double> initial_pose_sigma;
         int particles;
         double sigma_v, sigma_w, sigma_z;
         int steps_btw_sense_updates;
@@ -80,13 +84,13 @@ public:
         // Attribute and object initializations
         _localized = false;
         _steps = 0;
+        _steps_btw_sense_updates = steps_btw_sense_updates;
 
         std::filesystem::path map_path = std::filesystem::path(__FILE__).parent_path().parent_path() / "maps" / (world + ".json");
 
         // Particle Filter
-        _particle_filter = std::make_shared<ParticleFilter>(
-            dt, map_path.string(), particles, sigma_v, sigma_w, sigma_z, global_localization,
-            initial_pose, initial_pose_sigma
+        _particle_filter = ParticleFilter(
+            dt, map_path.string(), particles, sigma_v, sigma_w, sigma_z, global_localization, initial_pose, initial_pose_sigma
         );
 
         // Publisher
@@ -97,13 +101,12 @@ public:
             rclcpp::QoSInitialization{RMW_QOS_POLICY_HISTORY_KEEP_LAST, 10},
             rmw_qos_profile_sensor_data};
 
-
         odom_sub.subscribe(this, "/odometry", 10);
         scan_sub.subscribe(this, "/scan", 10);
 
         _sync = std::make_shared<message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<nav_msgs::msg::Odometry, sensor_msgs::msg::LaserScan>>>(message_filters::sync_policies::ApproximateTime<nav_msgs::msg::Odometry,sensor_msgs::msg::LaserScan>(10), odom_sub, scan_sub);
-        sync->setAgePenalty(9.0);
-        sync->registerCallback(std::bind(&ParticleFilterNode::_compute_pose_callback, this, _1, _2));
+        _sync->setAgePenalty(9.0);
+        _sync->registerCallback(std::bind(&ParticleFilterNode::_compute_pose_callback, this, std::placeholders::_1, std::placeholders::_2));
 
         return LifecycleNode::on_configure(state);
     }
@@ -140,9 +143,9 @@ private:
         const nav_msgs::msg::Odometry::ConstSharedPtr odom_msg,
         const sensor_msgs::msg::LaserScan::ConstSharedPtr scan_msg)
     {
-        float z_v = odom_msg.twist.twist.linear.x;
-        float z_w = odom_msg.twist.twist.angular.z;
-        const std::vector<float> z_scan = scan_msg.ranges;
+        float z_v = odom_msg->twist.twist.linear.x;
+        float z_w = odom_msg->twist.twist.angular.z;
+        const std::vector<float> z_scan = scan_msg->ranges;
 
         _execute_motion_step(z_v, z_w);
 
@@ -165,7 +168,7 @@ private:
     {
         auto start = std::chrono::high_resolution_clock::now();
 
-        _particle_filter->move(z_v, z_w);
+        _particle_filter.move(z_v, z_w);
 
         auto end = std::chrono::high_resolution_clock::now();
         std::chrono::duration<double> elapsed = end - start;
@@ -193,7 +196,7 @@ private:
         {
             auto start_time = std::chrono::high_resolution_clock::now();
     
-            _particle_filter->resample(z_us);
+            _particle_filter.resample(z_us);
     
             auto end_time = std::chrono::high_resolution_clock::now();
             auto sense_time = std::chrono::duration<double>(end_time - start_time).count();
@@ -201,7 +204,7 @@ private:
     
             start_time = std::chrono::high_resolution_clock::now();
     
-            std::tie(_localized, pose) = _particle_filter->compute_pose();
+            std::tie(_localized, pose) = _particle_filter.compute_pose();
     
             end_time = std::chrono::high_resolution_clock::now();
             auto clustering_time = std::chrono::duration<double>(end_time - start_time).count();
@@ -242,15 +245,16 @@ private:
     }
 
     // Attributes
-    std::shared_ptr<ParticleFilter> _particle_filter;
+    ParticleFilter _particle_filter;
     bool _localized;
     int _steps;
+    int _steps_btw_sense_updates;
 
     rclcpp::Publisher<amr_msgs::msg::PoseStamped>::SharedPtr publisher_pose_;
 
     message_filters::Subscriber<nav_msgs::msg::Odometry> odom_sub;
     message_filters::Subscriber<sensor_msgs::msg::LaserScan> scan_sub;
-    std::shared_ptr<message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<sensor_msgs::msg::Odometry, sensor_msgs::msg::LaserScan>>> _sync;
+    std::shared_ptr<message_filters::Synchronizer<message_filters::sync_policies::ApproximateTime<nav_msgs::msg::Odometry, sensor_msgs::msg::LaserScan>>> _sync;
 
 };
 

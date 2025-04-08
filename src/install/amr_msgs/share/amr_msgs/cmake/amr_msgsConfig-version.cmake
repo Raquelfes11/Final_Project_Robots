@@ -1,1 +1,0 @@
-/workspaces/sim_ws/src/build/amr_msgs/ament_cmake_core/amr_msgsConfig-version.cmake

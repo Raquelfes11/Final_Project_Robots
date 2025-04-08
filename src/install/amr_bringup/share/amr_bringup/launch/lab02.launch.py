@@ -1,1 +1,0 @@
-/workspaces/sim_ws/src/build/amr_bringup/launch/lab02.launch.py

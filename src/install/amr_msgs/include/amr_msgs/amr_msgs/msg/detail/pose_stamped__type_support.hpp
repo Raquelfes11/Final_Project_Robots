@@ -1,1 +1,0 @@
-/workspaces/sim_ws/src/build/amr_msgs/rosidl_generator_cpp/amr_msgs/msg/detail/pose_stamped__type_support.hpp

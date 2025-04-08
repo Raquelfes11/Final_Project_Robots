@@ -1,1 +1,0 @@
-/workspaces/sim_ws/src/amr_control/setup.py

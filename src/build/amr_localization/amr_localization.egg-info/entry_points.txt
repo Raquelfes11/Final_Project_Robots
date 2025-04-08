@@ -1,3 +1,0 @@
-[console_scripts]
-particle_filter = amr_localization.particle_filter_node:main
-

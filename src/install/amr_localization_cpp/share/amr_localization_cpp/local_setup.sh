@@ -1,1 +1,0 @@
-/workspaces/sim_ws/src/build/amr_localization_cpp/ament_cmake_environment_hooks/local_setup.sh

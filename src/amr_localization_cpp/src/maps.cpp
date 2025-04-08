@@ -20,6 +20,8 @@
 #include <algorithm>
 #include <sstream>
 
+#include "amr_localization_cpp/maps.hpp"  // A source file (.cpp) must always include its own header
+
 // CREO QUE HACE FALTA IMPORTAR ESO ASÍ PARA PODER USARLO
 using json = nlohmann::json;
 // namespace plt = matplotlibcpp;
